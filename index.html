@@ -99,6 +99,7 @@
 
     <script>
         let allData = [];
+        let currentDisplayData = []; // Κρατάμε τα δεδομένα που φαίνονται στην οθόνη
         let currentDay = 0;
         let currentCat = 'all';
         let currentTextToSpeak = "";
@@ -131,7 +132,8 @@
             const container = document.getElementById('content');
             container.innerHTML = '';
 
-            const filtered = allData.filter(item => {
+            // Φιλτράρισμα
+            currentDisplayData = allData.filter(item => {
                 const dayMatch = currentDay === 0 || (item.days && item.days.includes(currentDay));
                 let catMatch = true;
                 if (currentCat !== 'all') {
@@ -140,15 +142,13 @@
                 return dayMatch && catMatch;
             });
 
-            if (filtered.length === 0) {
+            if (currentDisplayData.length === 0) {
                 container.innerHTML = '<div style="text-align:center; padding:20px; color:#777;">Δεν βρέθηκαν αποτελέσματα.</div>';
                 return;
             }
 
-            filtered.forEach((item, index) => {
-                // Αν δεν υπάρχει description, βάζουμε το tip
-                const descText = item.description ? item.description.replace(/"/g, '&quot;') : item.tip;
-                
+            // Δημιουργία HTML
+            currentDisplayData.forEach((item, index) => {
                 container.innerHTML += `
                     <div class="card">
                         <div class="category-tag">${item.category}</div>
@@ -160,7 +160,7 @@
                         <div class="tip">💡 ${item.tip}</div>
                         
                         <div class="card-actions">
-                            <button class="action-btn info-btn" onclick='openModal("${item.name}", ${JSON.stringify(descText)})'>ℹ️ Info & Audio</button>
+                            <button class="action-btn info-btn" onclick="openModal(${index})">ℹ️ Info & Audio</button>
                             <a href="${item.mapUrl}" target="_blank" class="action-btn map-btn">📍 Χάρτης</a>
                         </div>
                     </div>
@@ -170,7 +170,16 @@
 
         // --- MODAL & AUDIO LOGIC ---
 
-        function openModal(title, text) {
+        function openModal(index) {
+            // Βρίσκουμε το αντικείμενο από τη λίστα που φαίνεται τώρα
+            const item = currentDisplayData[index];
+            
+            if (!item) return;
+
+            const title = item.name;
+            // Αν δεν έχει description, χρησιμοποιούμε το tip
+            const text = item.description || item.tip;
+
             document.getElementById('modalTitle').innerText = title;
             document.getElementById('modalBody').innerText = text;
             currentTextToSpeak = text;
@@ -183,7 +192,6 @@
         }
 
         function closeModal(event) {
-            // Αν κλείσει το modal, σταματάμε και την ομιλία
             document.getElementById('infoModal').style.display = 'none';
             stopSpeaking();
         }
@@ -196,14 +204,10 @@
             if (currentTextToSpeak !== '') {
                 const utterThis = new SpeechSynthesisUtterance(currentTextToSpeak);
                 utterThis.lang = 'el-GR'; // Ελληνικά
-                utterThis.rate = 0.9; // Λίγο πιο αργά για να είναι καθαρό
+                utterThis.rate = 0.9; 
 
                 utterThis.onend = function (event) {
                     toggleAudioButtons(false);
-                }
-
-                utterThis.onerror = function (event) {
-                    console.error('SpeechSynthesisUtterance.onerror');
                 }
 
                 synth.speak(utterThis);

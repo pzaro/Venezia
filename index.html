@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Βενετία: Dousis Guide & Audio</title>
+    <title>Βενετία: Dousis Guide</title>
     <style>
-        /* --- CSS STYLES --- */
+        /* CSS STYLES */
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f4f9; color: #333; margin: 0; padding-bottom: 60px; }
         
-        /* Header & Filters */
         .header { background: white; position: sticky; top: 0; z-index: 900; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 10px 0; }
         h1 { text-align: center; color: #b71c1c; margin: 5px 0; font-size: 1.3rem; }
         
@@ -20,12 +19,14 @@
         .btn-filter.active { background: #b71c1c; color: white; border-color: #b71c1c; }
         .date-btn.active { background: #2c3e50; border-color: #2c3e50; }
 
-        /* Cards */
         .container { max-width: 600px; margin: 0 auto; padding: 15px; }
-        .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 15px; border-left: 5px solid #b71c1c; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: relative; }
+        .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 15px; border-left: 5px solid #b71c1c; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         
         .category-tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #b71c1c; }
         .name { font-size: 1.2rem; font-weight: 800; margin: 5px 0; color: #222; }
+        
+        /* ΝΕΟ ΣΤΥΛ ΓΙΑ ΑΠΟΣΤΑΣΗ */
+        .distance-tag { font-size: 0.9rem; color: #555; font-weight: normal; display: block; margin-bottom: 5px; }
         
         .meta-info { display: flex; gap: 10px; margin-top: 8px; font-size: 0.9rem; }
         .time-badge { background: #333; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
@@ -33,27 +34,22 @@
         
         .tip { background: #fff8e1; color: #f57f17; padding: 8px; border-radius: 6px; margin-top: 10px; font-style: italic; font-size: 0.9rem; border-left: 3px solid #ffca28; }
 
-        /* Buttons Container */
         .card-actions { display: flex; gap: 10px; margin-top: 12px; }
         .action-btn { flex: 1; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; text-decoration: none; font-size: 0.9rem; cursor: pointer; border: none; }
-        
         .map-btn { background: white; color: #b71c1c; border: 2px solid #b71c1c; }
         .info-btn { background: #b71c1c; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; }
 
-        /* MODAL (Pop-up) */
+        /* MODAL */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; align-items: flex-end; justify-content: center; }
-        .modal-content { background: white; width: 100%; max-width: 600px; border-radius: 20px 20px 0 0; padding: 25px; box-sizing: border-box; max-height: 85vh; overflow-y: auto; animation: slideUp 0.3s ease-out; position: relative; }
-        
+        .modal-content { background: white; width: 100%; max-width: 600px; border-radius: 20px 20px 0 0; padding: 25px; max-height: 85vh; overflow-y: auto; animation: slideUp 0.3s ease-out; }
         .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         .modal-title { font-size: 1.4rem; font-weight: bold; color: #b71c1c; margin: 0; }
-        .close-btn { background: none; border: none; font-size: 2rem; color: #888; cursor: pointer; line-height: 1; }
-        
+        .close-btn { background: none; border: none; font-size: 2rem; color: #888; cursor: pointer; }
         .modal-body { font-size: 1rem; line-height: 1.6; color: #444; white-space: pre-line; }
-        
         .audio-controls { margin-top: 20px; display: flex; gap: 10px; border-top: 1px solid #eee; padding-top: 15px; }
         .speak-btn { background: #2c3e50; color: white; }
-        .stop-btn { background: #e74c3c; color: white; display: none; } /* Hidden by default */
-
+        .stop-btn { background: #e74c3c; color: white; display: none; }
+        
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
     </style>
 </head>
@@ -72,7 +68,7 @@
                 <button class="btn-filter date-btn" onclick="filterData('day', 6)">Σαβ 17/1</button>
             </div>
             <div class="scroll-container">
-                <button class="btn-filter active" onclick="filterData('cat', 'all')">Όλες οι Ώρες</button>
+                <button class="btn-filter active" onclick="filterData('cat', 'all')">Όλα</button>
                 <button class="btn-filter" onclick="filterData('cat', 'πρωι')">🌅 Πρωί</button>
                 <button class="btn-filter" onclick="filterData('cat', 'μεσημερι')">🥪 Μεσημέρι</button>
                 <button class="btn-filter" onclick="filterData('cat', 'βραδυ')">🍷 Βράδυ</button>
@@ -83,38 +79,32 @@
     <div class="container" id="content"></div>
 
     <div id="infoModal" class="modal-overlay" onclick="closeModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()"> <div class="modal-header">
-                <h2 id="modalTitle" class="modal-title">Τίτλος</h2>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-title"></h2>
                 <button class="close-btn" onclick="closeModal()">×</button>
             </div>
-            <div id="modalBody" class="modal-body">
-                Περιγραφή...
-            </div>
+            <div id="modalBody" class="modal-body"></div>
             <div class="audio-controls">
-                <button id="speakBtn" class="action-btn speak-btn" onclick="startSpeaking()">🔊 Ακρόαση Ξεναγού</button>
-                <button id="stopBtn" class="action-btn stop-btn" onclick="stopSpeaking()">⏹️ Διακοπή</button>
+                <button id="speakBtn" class="action-btn speak-btn" onclick="startSpeaking()">🔊 Ακρόαση</button>
+                <button id="stopBtn" class="action-btn stop-btn" onclick="stopSpeaking()">⏹️ Stop</button>
             </div>
         </div>
     </div>
 
     <script>
         let allData = [];
-        let currentDisplayData = []; // Κρατάμε τα δεδομένα που φαίνονται στην οθόνη
+        let currentDisplayData = [];
         let currentDay = 0;
         let currentCat = 'all';
         let currentTextToSpeak = "";
-        const synth = window.speechSynthesis; // Web Speech API
+        const synth = window.speechSynthesis;
 
-        // Load JSON
         fetch('locations.json')
             .then(res => res.json())
-            .then(data => {
-                allData = data;
-                render();
-            })
-            .catch(err => console.error("Error loading JSON:", err));
+            .then(data => { allData = data; render(); })
+            .catch(err => console.error("Error:", err));
 
-        // Filters
         function filterData(type, value) {
             if (type === 'day') {
                 currentDay = value;
@@ -127,40 +117,38 @@
             render();
         }
 
-        // Render List
         function render() {
             const container = document.getElementById('content');
             container.innerHTML = '';
 
-            // Φιλτράρισμα
             currentDisplayData = allData.filter(item => {
                 const dayMatch = currentDay === 0 || (item.days && item.days.includes(currentDay));
                 let catMatch = true;
-                if (currentCat !== 'all') {
-                    catMatch = item.category.toLowerCase().includes(currentCat);
-                }
+                if (currentCat !== 'all') catMatch = item.category.toLowerCase().includes(currentCat);
                 return dayMatch && catMatch;
             });
 
             if (currentDisplayData.length === 0) {
-                container.innerHTML = '<div style="text-align:center; padding:20px; color:#777;">Δεν βρέθηκαν αποτελέσματα.</div>';
+                container.innerHTML = '<div style="text-align:center; padding:20px; color:#777;">Κανένα πρόγραμμα.</div>';
                 return;
             }
 
-            // Δημιουργία HTML
             currentDisplayData.forEach((item, index) => {
+                // Εμφάνιση Απόστασης (αν υπάρχει)
+                const distanceHtml = item.distance ? `<span class="distance-tag">👣 Από Pesaro: <b>${item.distance}</b></span>` : '';
+
                 container.innerHTML += `
                     <div class="card">
                         <div class="category-tag">${item.category}</div>
                         <div class="name">${item.name}</div>
+                        ${distanceHtml}
                         <div class="meta-info">
                             <span class="time-badge">🕒 ${item.time || '-'}</span>
                             <span class="cost-badge">💰 ${item.cost}</span>
                         </div>
                         <div class="tip">💡 ${item.tip}</div>
-                        
                         <div class="card-actions">
-                            <button class="action-btn info-btn" onclick="openModal(${index})">ℹ️ Info & Audio</button>
+                            <button class="action-btn info-btn" onclick="openModal(${index})">ℹ️ Info</button>
                             <a href="${item.mapUrl}" target="_blank" class="action-btn map-btn">📍 Χάρτης</a>
                         </div>
                     </div>
@@ -168,71 +156,41 @@
             });
         }
 
-        // --- MODAL & AUDIO LOGIC ---
-
         function openModal(index) {
-            // Βρίσκουμε το αντικείμενο από τη λίστα που φαίνεται τώρα
             const item = currentDisplayData[index];
-            
             if (!item) return;
-
-            const title = item.name;
-            // Αν δεν έχει description, χρησιμοποιούμε το tip
-            const text = item.description || item.tip;
-
-            document.getElementById('modalTitle').innerText = title;
-            document.getElementById('modalBody').innerText = text;
-            currentTextToSpeak = text;
-            
-            // Show modal
+            document.getElementById('modalTitle').innerText = item.name;
+            document.getElementById('modalBody').innerText = item.description || item.tip;
+            currentTextToSpeak = item.description || item.tip;
             document.getElementById('infoModal').style.display = 'flex';
-            
-            // Reset audio buttons
             stopSpeaking();
         }
 
-        function closeModal(event) {
+        function closeModal() {
             document.getElementById('infoModal').style.display = 'none';
             stopSpeaking();
         }
 
         function startSpeaking() {
-            if (synth.speaking) {
-                console.error('speechSynthesis.speaking');
-                return;
-            }
-            if (currentTextToSpeak !== '') {
+            if (synth.speaking) return;
+            if (currentTextToSpeak) {
                 const utterThis = new SpeechSynthesisUtterance(currentTextToSpeak);
-                utterThis.lang = 'el-GR'; // Ελληνικά
-                utterThis.rate = 0.9; 
-
-                utterThis.onend = function (event) {
-                    toggleAudioButtons(false);
-                }
-
+                utterThis.lang = 'el-GR';
+                utterThis.rate = 0.9;
+                utterThis.onend = () => toggleAudioButtons(false);
                 synth.speak(utterThis);
                 toggleAudioButtons(true);
             }
         }
 
         function stopSpeaking() {
-            if (synth.speaking) {
-                synth.cancel();
-            }
+            if (synth.speaking) synth.cancel();
             toggleAudioButtons(false);
         }
 
         function toggleAudioButtons(isSpeaking) {
-            const speakBtn = document.getElementById('speakBtn');
-            const stopBtn = document.getElementById('stopBtn');
-            
-            if (isSpeaking) {
-                speakBtn.style.display = 'none';
-                stopBtn.style.display = 'inline-block';
-            } else {
-                speakBtn.style.display = 'inline-block';
-                stopBtn.style.display = 'none';
-            }
+            document.getElementById('speakBtn').style.display = isSpeaking ? 'none' : 'inline-block';
+            document.getElementById('stopBtn').style.display = isSpeaking ? 'inline-block' : 'none';
         }
     </script>
 

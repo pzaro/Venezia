@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδηγός Βενετίας (by Dousis)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; color: #b71c1c; }
+        .intro { text-align: center; margin-bottom: 30px; font-style: italic; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 20px; border-left: 5px solid #b71c1c; }
+        .category { font-size: 0.85em; text-transform: uppercase; color: #666; letter-spacing: 1px; }
+        .name { font-size: 1.4em; font-weight: bold; margin: 5px 0; color: #2c3e50; }
+        .tip { background-color: #fff3e0; padding: 10px; border-radius: 5px; margin: 10px 0; font-style: italic; }
+        .cost-badge { display: inline-block; background-color: #e0f2f1; color: #00695c; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 0.9em; }
+        .btn { display: block; width: 100%; text-align: center; background-color: #b71c1c; color: white; text-decoration: none; padding: 10px 0; border-radius: 5px; margin-top: 15px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background-color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+    <h1>🇮🇹 Βενετία: Ο Οδηγός</h1>
+    <p class="intro">Βασισμένο στις προτάσεις του Τάσου Δούση ("Εικόνες")<br>Επικαιροποίηση Τιμών: 2025</p>
+
+    <div id="content">Φόρτωση δεδομένων...</div>
+
+    <script>
+        fetch('locations.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('content');
+                container.innerHTML = '';
+                
+                data.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="category">${item.category}</div>
+                        <div class="name">${item.name}</div>
+                        <div class="cost-badge">💰 ${item.cost}</div>
+                        <div class="tip">💡 Tip: ${item.tip}</div>
+                        <a href="${item.mapUrl}" target="_blank" class="btn">📍 Άνοιγμα στο Google Maps</a>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = 'Σφάλμα φόρτωσης δεδομένων.';
+                console.error('Error:', error);
+            });
+    </script>
+
+</body>
+</html>

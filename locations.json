@@ -8,40 +8,62 @@
     "tip": "Στάση Vaporetto: Ca' d'Oro. Είσαι στην καρδιά του Cannaregio.",
     "cost": "-",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Pesaro+Palace+Venice",
-    "description": "Η βάση σου. Από εδώ ξεκινάνε όλα. Η στάση Ca' d'Oro είναι στα 50 μέτρα."
+    "description": "Το ξενοδοχείο σας είναι ένα ιστορικό παλάτι που χρονολογείται από τον 15ο αιώνα. Βρίσκεται στην περιοχή Cannaregio, την πιο αυθεντική γειτονιά της Βενετίας.\n\n📍 Πρακτικά:\nΗ στάση Vaporetto 'Ca' d'Oro' (Γραμμή 1) είναι ακριβώς μπροστά, κάνοντας τις μετακινήσεις πανεύκολες. Από εδώ περνάει όλη η ιστορία του Grand Canal."
   },
   {
-    "days": [5],
-    "time": "12:30",
-    "category": "🚤 ΜΕΣΗΜΕΡΙ - Εμπειρία",
-    "name": "Traghetto Santa Sofia",
-    "distance": "3' περπάτημα",
-    "tip": "Πέρνα απέναντι στο Rialto με 2€.",
-    "cost": "2.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia",
-    "description": "Η στάση του Traghetto είναι σχεδόν δίπλα στο ξενοδοχείο σου. Είναι ο πιο γρήγορος τρόπος να πας στην Αγορά του Ριάλτο (απέναντι όχθη)."
+    "days": [2, 1],
+    "time": "07:00 - 08:30",
+    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
+    "name": "Piazza San Marco",
+    "distance": "18' περπάτημα / 15' Vaporetto",
+    "tip": "Πήγαινε χαράματα για τη μαγεία.",
+    "cost": "Δωρεάν",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice",
+    "description": "📖 Ιστορία:\nΟ Ναπολέων την αποκάλεσε 'το ωραιότερο σαλόνι της Ευρώπης'. Είναι η μοναδική πλατεία στη Βενετία που φέρει τον τίτλο 'Piazza' (οι άλλες λέγονται Campi). Εδώ χτυπούσε η καρδιά της Γαληνοτάτης Δημοκρατίας για 1000 χρόνια.\n\n🎙️ Tip Δούση:\n'Εδώ συμβαίνει το αδιαχώρητο μετά τις 10:00. Η μαγεία είναι να έρθετε στις 07:00 το πρωί. Θα είστε εσείς, τα περιστέρια και η ιστορία. Προσέξτε τις τιμές στα καφέ (Quadri, Florian), είναι απαγορευτικές αν κάτσετε, αλλά η βόλτα είναι δωρεάν.'"
   },
   {
     "days": [2],
-    "time": "17:00",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Θέα",
-    "name": "T Fondaco dei Tedeschi",
-    "distance": "9' περπάτημα",
-    "tip": "Ταράτσα με δωρεάν θέα (Κράτηση!).",
+    "time": "08:30",
+    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
+    "name": "Campanile (Καμπαναριό)",
+    "distance": "Στην Πλατεία San Marco",
+    "tip": "Ο 'Paron de Casa' (Ο Αφέντης του Σπιτιού).",
+    "cost": "~12€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs",
+    "description": "📖 Ιστορία:\nΤο ψηλότερο κτίριο της Βενετίας (98,6 μέτρα). Το αρχικό καμπαναριό κατέρρευσε ξαφνικά το 1902 και ξαναχτίστηκε 'com'era, dov'era' (όπως ήταν, όπου ήταν). Στην κορυφή υπάρχει ένα χρυσό άγαλμα του Αρχαγγέλου Γαβριήλ που γυρίζει με τον άνεμο.\n\n🎙️ Tip Δούση:\n'Αν έχει ουρά, μην περιμένετε. Πηγαίνετε απέναντι στο San Giorgio Maggiore για καλύτερη θέα. Αν ανεβείτε όμως, θα δείτε όλη τη λιμνοθάλασσα πιάτο.'"
+  },
+  {
+    "days": [4],
+    "time": "09:00",
+    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
+    "name": "Palazzo Ducale",
+    "distance": "19' περπάτημα",
+    "tip": "Η έδρα της εξουσίας.",
+    "cost": "Εισιτήριο ~30€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice",
+    "description": "📖 Ιστορία:\nΓοτθικό αριστούργημα και έδρα του Δόγη. Εδώ συνεδρίαζε το 'Συμβούλιο των Δέκα', η τρομερή μυστική υπηρεσία της Βενετίας. Προσέξτε τα 'Bocca di Leone' (στόματα λιονταριών) στους τοίχους, όπου οι πολίτες έριχναν ανώνυμες καταγγελίες για προδότες.\n\n🎙️ Tip Δούση:\n'Μην προσπεράσετε τις φυλακές. Από εδώ απέδρασε ο Καζανόβα, ο μοναδικός που τα κατάφερε, μεθώντας τους φρουρούς και ανοίγοντας τρύπα στη στέγη!'"
+  },
+  {
+    "days": [4],
+    "time": "09:30",
+    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
+    "name": "Ponte dei Sospiri (Στεναγμών)",
+    "distance": "Δίπλα στο Παλάτι",
+    "tip": "Δες την από τη γέφυρα Paglia.",
     "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi+Venice",
-    "description": "Πολυκατάστημα πολυτελείας πολύ κοντά στη γέφυρα του Ριάλτο. Η ταράτσα προσφέρει 360° θέα."
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs+Venice",
+    "description": "📖 Ιστορία:\nΣυνδέει το Παλάτι με τις Νέες Φυλακές. Ο Λόρδος Βύρων της έδωσε αυτό το ρομαντικό όνομα.\n\n🎙️ Η Αλήθεια (Δούσης):\n'Ο μύθος λέει πως οι ερωτευμένοι που φιλιούνται από κάτω μένουν για πάντα μαζί. Η ιστορική αλήθεια είναι πιο σκληρή: Ονομάστηκε έτσι από τους στεναγμούς των καταδίκων που έβλεπαν για τελευταία φορά τον ήλιο και τη θάλασσα πριν οδηγηθούν στα μπουντρούμια.'"
   },
   {
     "days": [2],
     "time": "09:30",
     "category": "🌅 ΠΡΩΙ - Αγορά",
     "name": "Mercato di Rialto",
-    "distance": "10' (μέσω Traghetto) ή 15' με τα πόδια",
-    "tip": "Η ψυχή της πόλης (κλειστά Δευτέρα).",
+    "distance": "10' (μέσω Traghetto)",
+    "tip": "Έλα νωρίς το πρωί.",
     "cost": "Δωρεάν",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Market",
-    "description": "Η ιστορική αγορά. Αν πάρεις το Traghetto από τη Santa Sofia (δίπλα στο ξενοδοχείο σου), είσαι εκεί σε 5 λεπτά!"
+    "description": "📖 Ιστορία:\nΕδώ χτυπά η εμπορική καρδιά της Βενετίας από το 1097. Χωρίζεται στην Pescheria (ψαραγορά) και την Erbaria (λαχανικά). Στις κολώνες θα δείτε χαραγμένους κανόνες της Δημοκρατίας για το ελάχιστο επιτρεπτό μέγεθος των ψαριών.\n\n🎙️ Tip Δούση:\n'Εδώ θα νιώσετε την πραγματική Βενετία, όχι την τουριστική. Δείτε τις 'Sciure' (κυρίες) να κάνουν παζάρια και τους γλάρους να κλέβουν σαρδέλες. Προσοχή: Δευτέρα δεν έχει ψάρια!'"
   },
   {
     "days": [2],
@@ -49,32 +71,21 @@
     "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
     "name": "Bar Rialto da Lollo",
     "distance": "10' περπάτημα",
-    "tip": "Tramezzini (Τόνος & Αυγό).",
+    "tip": "Τα διάσημα Tramezzini.",
     "cost": "~2.50€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo+Venice",
-    "description": "Τα καλύτερα tramezzini της αγοράς. Βρίσκεται κάτω από τις καμάρες."
+    "description": "🍽️ Γαστρονομία:\nΤο Tramezzino (τριγωνικό σάντουιτς χωρίς κόρα) γεννήθηκε στο Τορίνο αλλά τελειοποιήθηκε στη Βενετία. Το μυστικό είναι το 'ψωμί-σύννεφο' και η πολλή μαγιονέζα που κρατάει την υγρασία μακριά.\n\n🎙️ Tip Δούση:\n'Στον Lollo θα βρείτε τα πιο 'τίμια' tramezzini. Είναι φουσκωτά, γεμάτα υλικά. Δοκιμάστε Tonno e Uova (Τόνος-Αυγό) ή Granchio (Καβούρι). Πάρτε τα στο χέρι και καθίστε στο κανάλι.'"
   },
   {
-    "days": [5],
-    "time": "11:30",
-    "category": "🌅 ΠΡΩΙ - Cannaregio",
-    "name": "Ca' d'Oro (Μουσείο)",
-    "distance": "1' περπάτημα",
-    "tip": "Το πιο όμορφο γοτθικό παλάτι.",
-    "cost": "Είσοδος ~13€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ca'+d'Oro+Venice",
-    "description": "Είναι κυριολεκτικά δίπλα στο ξενοδοχείο σου. Αξίζει να μπεις να δεις την αυλή και τη θέα από το μπαλκόνι."
-  },
-  {
-    "days": [1],
-    "time": "19:30",
-    "category": "🍷 ΒΡΑΔΥ - Cannaregio",
-    "name": "Osteria ai Promessi Sposi",
-    "distance": "8' περπάτημα",
-    "tip": "Κεφτεδάκια και ζεστή ατμόσφαιρα.",
-    "cost": "~35€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DPonte%2Bdi%2BRialto",
-    "description": "Πολύ κοντά σου. Ιδανικό για το πρώτο βράδυ που θα είσαι κουρασμένος."
+    "days": [4],
+    "time": "12:00",
+    "category": "🌅 ΠΡΩΙ - Θέα",
+    "name": "San Giorgio Maggiore",
+    "distance": "35' (Περπάτημα + Vaporetto)",
+    "tip": "Η ΚΑΛΥΤΕΡΗ θέα της Βενετίας.",
+    "cost": "Vaporetto + 6€",
+    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBar%2BRialto%2Bda%2BLollo%2BVenezia",
+    "description": "📖 Ιστορία:\nΤο νησάκι απέναντι από τον Άγιο Μάρκο με την εκκλησία του Παλλάντιο. Το 1100 μ.Χ. ήταν αμπελώνες και κυπαρίσσια.\n\n🎙️ Tip Δούση:\n'Εδώ είναι το μυστικό μου. Όλοι συνωστίζονται στο καμπαναριό του Αγίου Μάρκου. Εσείς θα πάρετε το βαπορέτο, θα έρθετε εδώ απέναντι και θα ανεβείτε σε αυτό το καμπαναριό. Θα βγάλετε την πλατεία San Marco φωτογραφία από ψηλά, χωρίς κανέναν μπροστά σας.'"
   },
   {
     "days": [5],
@@ -82,32 +93,142 @@
     "category": "🌅 ΠΡΩΙ - Cannaregio",
     "name": "Ghetto Ebraico",
     "distance": "13' περπάτημα",
-    "tip": "Ιστορική βόλτα στην εβραϊκή συνοικία.",
+    "tip": "Η γέννηση της λέξης 'Γκέτο'.",
     "cost": "Δωρεάν",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Venice+Ghetto",
-    "description": "Περπατώντας βόρεια από το ξενοδοχείο σου, φτάνεις στο Γκέτο. Δες τα ψηλά κτίρια."
+    "description": "📖 Ιστορία:\nΤο 1516, η Βενετία ανάγκασε τους Εβραίους να ζουν σε αυτό το νησάκι. Η λέξη προέρχεται από το βενετσιάνικο 'Gheto' (χύριο), καθώς εκεί υπήρχε παλιά χυτήριο μετάλλων. Λόγω έλλειψης χώρου, εδώ βλέπουμε τα ψηλότερα κτίρια της Βενετίας (έως 8 ορόφους).\n\n🎙️ Ξενάγηση:\n'Περπατήστε με ησυχία. Θα δείτε τις 5 Συναγωγές στην κορυφή των κτιρίων και φούρνους με παραδοσιακά γλυκά Kosher.'"
   },
   {
     "days": [5],
-    "time": "10:30",
-    "category": "🌆 Hidden Gem",
-    "name": "Ponte Chiodo",
-    "distance": "12' περπάτημα",
-    "tip": "Γέφυρα χωρίς κάγκελα.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DOsteria%2BAll%27Arco",
-    "description": "Στο Cannaregio. Μια από τις δύο μοναδικές γέφυρες στη Βενετία που δεν έχουν προστατευτικά κάγκελα (όπως ήταν παλιά)."
+    "time": "11:30",
+    "category": "🌅 ΠΡΩΙ - Cannaregio",
+    "name": "Ca' d'Oro",
+    "distance": "1' περπάτημα",
+    "tip": "Το 'Χρυσό Σπίτι'.",
+    "cost": "Είσοδος ~13€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ca'+d'Oro+Venice",
+    "description": "📖 Ιστορία:\nΠαλάτι του 1430. Ονομάστηκε έτσι γιατί η πρόσοψή του ήταν κάποτε καλυμμένη με φύλλα χρυσού και πολύτιμα χρώματα (Ultramarine). Σώθηκε από την καταστροφή χάρη στον βαρόνο Franchetti.\n\n🎙️ Tip:\nΕίναι ακριβώς δίπλα στο ξενοδοχείο σου. Αξίζει να μπεις για να βγάλεις φωτογραφία το Grand Canal μέσα από τις μαρμάρινες κολώνες του μπαλκονιού."
+  },
+  {
+    "days": [3],
+    "time": "09:00 - 14:00",
+    "category": "🌅 ΠΡΩΙ - Νησιά",
+    "name": "Murano & Burano",
+    "distance": "50' (Vaporetto)",
+    "tip": "Γυαλί και Χρώμα.",
+    "cost": "Vaporetto Pass",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano+Venice",
+    "description": "📖 Ιστορία:\nMurano: Το 1291 ο Δόγης διέταξε όλους τους υαλουργούς να μεταφερθούν εδώ για να μην κάψουν την πόλη. Όποιος τεχνίτης έφευγε, τιμωρούνταν με θάνατο!\nBurano: Διάσημο για τις δαντέλες και τα χρωματιστά σπίτια. Ο μύθος λέει ότι βάφτηκαν έτσι για να αναγνωρίζουν οι ψαράδες το σπίτι τους μέσα στην ομίχλη της λιμνοθάλασσας."
+  },
+  {
+    "days": [1],
+    "time": "19:00",
+    "category": "🍸 ΑΠΟΓΕΥΜΑ - Ιστορία",
+    "name": "Harry's Bar",
+    "distance": "19' περπάτημα",
+    "tip": "Ο ναός του Bellini.",
+    "cost": "Bellini ~22€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venice",
+    "description": "📖 Ιστορία:\nΆνοιξε το 1931 από τον Giuseppe Cipriani. Εδώ σύχναζε ο Χέμινγουεϊ (είχε δικό του τραπέζι), ο Τσάπλιν, ο Γουέλς. Εδώ εφευρέθηκε το Carpaccio (ονομάστηκε έτσι από τα κόκκινα χρώματα του ζωγράφου Vittore Carpaccio) και το Bellini (λευκό ροδάκινο + Prosecco).\n\n🎙️ Tip Δούση:\n'Είναι ακριβό; Ναι. Είναι τουριστικό; Ναι. Αλλά είναι ιστορία. Μπείτε, πιείτε ένα Bellini στα γρήγορα και νιώστε την ατμόσφαιρα.'"
   },
   {
     "days": [2, 5],
-    "time": "21:00",
-    "category": "🍷 ΒΡΑΔΥ - Cannaregio",
-    "name": "Paradiso Perduto",
-    "distance": "14' περπάτημα",
-    "tip": "Το μεγάλο φινάλε. Μουσική & Θαλασσινά.",
-    "cost": "~45€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Paradiso+Perduto+Venice",
-    "description": "Στο κανάλι της Misericordia. Από το ξενοδοχείο πας ευθεία βόρεια."
+    "time": "11:30",
+    "category": "🌆 Hidden Gem",
+    "name": "Ponte delle Tette",
+    "distance": "11' περπάτημα",
+    "tip": "Η Γέφυρα των Στηθών.",
+    "cost": "Δωρεάν",
+    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBar%2BRialto%2Bda%2BLollo",
+    "description": "📖 Ιστορία:\nΒρίσκεται στην περιοχή Carampane, την παλιά συνοικία των 'κόκκινων φαναριών'. Τον 15ο αιώνα, η Γερουσία της Βενετίας, ανήσυχη για την αύξηση της ομοφυλοφιλίας, εξέδωσε διάταγμα που επέτρεπε στις ιερόδουλες να στέκονται σε αυτή τη γέφυρα και στα παράθυρα με τα στήθη γυμνά ('le tette') για να 'δελεάζουν' τους άνδρες."
+  },
+  {
+    "days": [4],
+    "time": "17:30",
+    "category": "🌆 ΑΠΟΓΕΥΜΑ - Αξιοθέατα",
+    "name": "Libreria Acqua Alta",
+    "distance": "16' περπάτημα",
+    "tip": "Βιβλία σε γόνδολες.",
+    "cost": "Δωρεάν",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Libreria+Acqua+Alta",
+    "description": "📖 Το μέρος:\nΑυτοαποκαλείται 'το ομορφότερο βιβλιοπωλείο στον κόσμο'. Ο ιδιοκτήτης Luigi Frizzo βρήκε τη λύση στις πλημμύρες (Acqua Alta): έβαλε τα βιβλία μέσα σε μπανιέρες, βάρκες και μια κανονική γόνδολα στη μέση του μαγαζιού! \n\n🎙️ Tip:\nΠηγαίνετε στην πίσω αυλή και ανεβείτε τη σκάλα που είναι φτιαγμένη από παλιές εγκυκλοπαίδειες για να δείτε το κανάλι."
+  },
+  {
+    "days": [1],
+    "time": "16:00",
+    "category": "☕ ΑΠΟΓΕΥΜΑ - Ιστορία",
+    "name": "Caffè Florian",
+    "distance": "18' περπάτημα",
+    "tip": "Το παλαιότερο καφέ της Ιταλίας.",
+    "cost": "Espresso ~15€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffè+Florian+Venice",
+    "description": "📖 Ιστορία:\nΛειτουργεί αδιάκοπα από το 1720. Οι αίθουσές του είναι σαν μουσείο. Εδώ ο Καζανόβα φλέρταρε κυρίες (ήταν το μόνο καφέ που δεχόταν γυναίκες τότε), εδώ ήπιαν καφέ ο Γκαίτε, ο Λόρδος Βύρων και ο Προυστ.\n\n🎙️ Tip Δούση:\n'Αν καθίσετε έξω και παίζει η ορχήστρα, θα χρεωθείτε έξτρα το 'coperto' μουσικής. Αν θέλετε απλά να δείτε το εσωτερικό, πηγαίνετε στο μπαρ για έναν όρθιο καφέ που είναι φθηνότερος.'"
+  },
+  {
+    "days": [5],
+    "time": "13:00",
+    "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
+    "name": "All' Arco",
+    "distance": "11' περπάτημα",
+    "tip": "Sarde in Saor.",
+    "cost": "~3.00€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'+Arco+Venice",
+    "description": "🍽️ Γαστρονομία:\nΤο 'Sarde in Saor' είναι το πιο παραδοσιακό πιάτο. Τηγανητές σαρδέλες που μαρινάρονται σε ξύδι, κρεμμύδια, σταφίδες και κουκουνάρι. \n📖 Ιστορία:\nΉταν φαγητό των ναυτικών. Το ξύδι και τα κρεμμύδια συντηρούσαν το ψάρι στα μεγάλα ταξίδια, ενώ οι σταφίδες έδιναν ενέργεια και γλύκα για να σπάει η οξύτητα."
+  },
+  {
+    "days": [3],
+    "time": "13:00",
+    "category": "🍽️ ΜΕΣΗΜΕΡΙ - Burano",
+    "name": "Trattoria Al Gatto Nero",
+    "distance": "Στο Burano",
+    "tip": "Risotto di Gò.",
+    "cost": "~60€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero",
+    "description": "🍽️ Γαστρονομία:\nΤο εστιατόριο του Ruggero Bovo είναι θεσμός. Το διάσημο πιάτο είναι το 'Risotto di Gò'.\n📖 Τι είναι το Gò;\nΕίναι ο κοκωβιός (Goby fish), ένα άσχημο μικρό ψάρι της λιμνοθάλασσας με πολλά κόκαλα. Οι ψαράδες το έβραζαν για να κάνουν ζωμό. Αυτός ο πηχτός, νόστιμος ζωμός κάνει το ριζότο κρεμώδες χωρίς να χρειάζεται κρέμα γάλακτος ή βούτυρο."
+  },
+  {
+    "days": [4],
+    "time": "10:30",
+    "category": "🌅 ΠΡΩΙ - Ελληνικό Ενδιαφέρον",
+    "name": "San Giorgio dei Greci",
+    "distance": "22' περπάτημα",
+    "tip": "Η Εκκλησία των Ελλήνων.",
+    "cost": "Δωρεάν",
+    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DDoge%27s%2BPalace",
+    "description": "📖 Ιστορία:\nΜετά την άλωση της Κωνσταντινούπολης, χιλιάδες Έλληνες κατέφυγαν στη Βενετία. Η ελληνική κοινότητα ήταν η ισχυρότερη της πόλης. Η εκκλησία χτίστηκε το 1539 με χρήματα από φόρους στα πλοία.\n\n🎙️ Tip Δούση:\n'Κοιτάξτε το καμπαναριό απ' έξω. Γέρνει επικίνδυνα! Είναι ένα από τα τρία 'μεθυσμένα' καμπαναριά της Βενετίας.'"
+  },
+  {
+    "days": [5],
+    "time": "12:30",
+    "category": "🚤 ΜΕΣΗΜΕΡΙ - Εμπειρία",
+    "name": "Traghetto Santa Sofia",
+    "distance": "3' περπάτημα",
+    "tip": "Η γόνδολα των φτωχών.",
+    "cost": "2.00€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia",
+    "description": "📖 Τι είναι:\nΕίναι μεγάλες γόνδολες που λειτουργούν ως 'λεωφορεία' για να περάσεις το Grand Canal όπου δεν υπάρχει γέφυρα. Τις οδηγούν δύο κωπηλάτες.\n\n🎙️ Tip:\nΟι ντόπιοι στέκονται όρθιοι κατά τη διαδρομή. Δοκιμάστε το (αν έχετε ισορροπία) για να νιώσετε βέροι Βενετσιάνοι με μόλις 2 ευρώ!"
+  },
+  {
+    "days": [4],
+    "time": "17:00",
+    "category": "🌆 ΑΠΟΓΕΥΜΑ - Αξιοθέατα",
+    "name": "Scala Contarini del Bovolo",
+    "distance": "15' περπάτημα",
+    "tip": "Η σκάλα σαλιγκάρι.",
+    "cost": "Είσοδος ~8€",
+    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DSaint%2BMark%27s%2BBasilica",
+    "description": "📖 Ιστορία:\nΜια αρχιτεκτονική ιδιοτροπία του 15ου αιώνα. Ο γόνος της οικογένειας Contarini ήθελε να ανεβαίνει στο δωμάτιό του με το άλογό του (!), γι' αυτό και η σκάλα δεν έχει σκαλοπάτια αλλά ράμπα σε σχήμα σπείρας.\n'Bovolo' στα βενετσιάνικα σημαίνει σαλιγκάρι."
+  },
+  {
+    "days": [2],
+    "time": "17:00",
+    "category": "🌆 ΑΠΟΓΕΥΜΑ - Θέα",
+    "name": "T Fondaco dei Tedeschi",
+    "distance": "9' περπάτημα",
+    "tip": "Δωρεάν θέα (με κράτηση).",
+    "cost": "Δωρεάν",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi+Venice",
+    "description": "📖 Ιστορία:\nΙστορικά ήταν η έδρα των Γερμανών εμπόρων (Tedeschi) στη Βενετία. Σήμερα είναι πολυκατάστημα.\n\n🎙️ Tip:\nΗ ταράτσα προσφέρει ίσως την πιο καθαρή θέα 360 μοιρών στο Μεγάλο Κανάλι. Είναι δωρεάν, αλλά αυστηρά με ραντεβού των 15 λεπτών μέσω ίντερνετ."
   },
   {
     "days": [2],
@@ -118,162 +239,7 @@
     "tip": "Spritz στη βάρκα.",
     "cost": "Spritz ~4€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Al+Timon+Venice",
-    "description": "Λίγο πιο κάτω από το Paradiso Perduto. Must για νεολαία."
-  },
-  {
-    "days": [3],
-    "time": "20:00",
-    "category": "🍷 ΒΡΑΔΥ - Cannaregio",
-    "name": "Vino Vero",
-    "distance": "14' περπάτημα",
-    "tip": "Εκλεκτά κρασιά.",
-    "cost": "Ποτήρι ~5€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DPiazza%2BSan%2BMarco%2BVenice",
-    "description": "Εξαιρετικό wine bar στο ίδιο κανάλι (Misericordia)."
-  },
-  {
-    "days": [4],
-    "time": "20:00",
-    "category": "🍷 ΒΡΑΔΥ - Cannaregio",
-    "name": "Trattoria da Rioba",
-    "distance": "16' περπάτημα",
-    "tip": "Ρομαντικό δείπνο.",
-    "cost": "~50€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBridge%2Bof%2BSighs",
-    "description": "Δίπλα στο Al Timon, αλλά πιο εστιατορικό."
-  },
-  {
-    "days": [6],
-    "time": "09:00",
-    "category": "☕ ΠΡΩΙ - Καφές",
-    "name": "Torrefazione Cannaregio",
-    "distance": "15' περπάτημα",
-    "tip": "Ο καλύτερος καφές για αποχαιρετισμό.",
-    "cost": "1.20€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DLibreria%2BAcqua%2BAlta",
-    "description": "Στο δρόμο για το Γκέτο."
-  },
-  
-  {
-    "days": [2, 1],
-    "time": "07:00 - 08:30",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Piazza San Marco",
-    "distance": "18' περπάτημα / 15' Vaporetto",
-    "tip": "Πήγαινε χαράματα.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice",
-    "description": "Από το ξενοδοχείο είναι ένας λαβύρινθος 20 λεπτών με τα πόδια, ή παίρνεις το Vaporetto Γραμμή 1 από το Ca' d'Oro."
-  },
-  {
-    "days": [2],
-    "time": "08:30",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Campanile (Καμπαναριό)",
-    "distance": "Στην Πλατεία San Marco",
-    "tip": "Η θέα από ψηλά.",
-    "cost": "~12€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs",
-    "description": "Το ψηλότερο κτίριο της Βενετίας. Έχει ασανσέρ."
-  },
-  {
-    "days": [2],
-    "time": "08:45",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Torre dell'Orologio",
-    "distance": "Στην Πλατεία San Marco",
-    "tip": "Ο Πύργος του Ρολογιού.",
-    "cost": "Εξωτερικά Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DT%2BFondaco%2Bdei%2BTedeschi",
-    "description": "Δείτε τους δύο Μαυριτανούς που χτυπούν την καμπάνα στην κορυφή."
-  },
-  {
-    "days": [4],
-    "time": "09:00",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Palazzo Ducale & Γέφυρα Στεναγμών",
-    "distance": "19' περπάτημα",
-    "tip": "Επίσκεψη στο Παλάτι.",
-    "cost": "Εισιτήριο ~30€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice",
-    "description": "Δίπλα στην πλατεία Αγίου Μάρκου."
-  },
-  {
-    "days": [1],
-    "time": "16:00",
-    "category": "☕ ΑΠΟΓΕΥΜΑ - Ιστορία",
-    "name": "Caffè Florian",
-    "distance": "18' περπάτημα",
-    "tip": "Το παλαιότερο καφέ.",
-    "cost": "Espresso ~15€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffè+Florian+Venice",
-    "description": "Πάνω στην πλατεία."
-  },
-  {
-    "days": [1, 4],
-    "time": "19:00",
-    "category": "🍸 ΑΠΟΓΕΥΜΑ - Ιστορία",
-    "name": "Harry's Bar",
-    "distance": "19' περπάτημα (Στάση Vallaresso)",
-    "tip": "Bellini.",
-    "cost": "Bellini ~22€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venice",
-    "description": "Πίσω από την πλατεία, δίπλα στη στάση Vaporetto San Marco."
-  },
-  {
-    "days": [4],
-    "time": "12:00",
-    "category": "🌅 ΠΡΩΙ - Θέα",
-    "name": "San Giorgio Maggiore",
-    "distance": "35' (Περπάτημα + Vaporetto)",
-    "tip": "Η ΚΑΛΥΤΕΡΗ θέα.",
-    "cost": "Vaporetto + 6€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBar%2BRialto%2Bda%2BLollo%2BVenezia",
-    "description": "Πρέπει να πας Άγιο Μάρκο και από εκεί να πάρεις το Vaporetto (Γραμμή 2) για απέναντι (3 λεπτά διαδρομή)."
-  },
-  {
-    "days": [4],
-    "time": "10:30",
-    "category": "🌅 ΠΡΩΙ - Ελληνικό Ενδιαφέρον",
-    "name": "San Giorgio dei Greci",
-    "distance": "22' περπάτημα",
-    "tip": "Ο Άγιος Γεώργιος των Ελλήνων.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DDoge%27s%2BPalace",
-    "description": "Στο Castello, 5 λεπτά από τον Άγιο Μάρκο."
-  },
-  {
-    "days": [4],
-    "time": "11:00",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Basilica dei Santi Giovanni e Paolo",
-    "distance": "14' περπάτημα",
-    "tip": "Γοτθικός ναός.",
-    "cost": "~3.50€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DHarry%27s%2BBar%2BVenice",
-    "description": "Στο Castello, σχετικά κοντά στο ξενοδοχείο σου (μέσω στενών)."
-  },
-  {
-    "days": [2],
-    "time": "08:30",
-    "category": "🌅 ΠΡΩΙ - Αξιοθέατα",
-    "name": "Arsenale (Εξωτερικά)",
-    "distance": "25' περπάτημα",
-    "tip": "Τα παλιά ναυπηγεία.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DDal%2BMoro%27s%2B-%2BFresh%2BPasta%2BTo%2BGo",
-    "description": "Περπατώντας στην προκυμαία Riva degli Schiavoni, φτάνεις στην είσοδο του Arsenale με τα λιοντάρια."
-  },
-  {
-    "days": [4],
-    "time": "18:00",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Θέα",
-    "name": "Ponte dell'Accademia",
-    "distance": "25' περπάτημα",
-    "tip": "Φωτογραφία Grand Canal.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DRialto%2BBridge",
-    "description": "Μακριά με τα πόδια, καλύτερα πάρε Vaporetto από Ca' d'Oro προς Accademia."
+    "description": "📍 Το Vibe:\nΤο απόλυτο στέκι της νεολαίας στο Cannaregio. Δεν υπάρχουν τραπέζια έξω, αλλά μια μεγάλη ξύλινη βάρκα δεμένη στο κανάλι. Παίρνεις το ποτό σου σε πλαστικό, κάθεσαι στη βάρκα και απολαμβάνεις το ηλιοβασίλεμα ή το βράδυ."
   },
   {
     "days": [4],
@@ -281,152 +247,20 @@
     "category": "🌆 ΑΠΟΓΕΥΜΑ - Dorsoduro",
     "name": "Basilica di Santa Maria della Salute",
     "distance": "35' περπάτημα / 25' Vaporetto",
-    "tip": "Εκκλησία Τάμα.",
+    "tip": "Η Παναγία της Υγείας.",
     "cost": "Δωρεάν",
     "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DCantina%2BDo%2BMori",
-    "description": "Στην άκρη του Dorsoduro. Πάρε Vaporetto Γραμμή 1 από Ca' d'Oro."
+    "description": "📖 Ιστορία:\nΤο 1630 η Βενετία χτυπήθηκε από τη Μαύρη Πανώλη που σκότωσε το 1/3 του πληθυσμού. Η Γερουσία έκανε τάμα να χτίσει αυτή την εκκλησία αν σταματήσει το κακό. Ο τεράστιος τρούλος της στηρίζεται σε 1.000.000 ξύλινους πασσάλους βυθισμένους στη λάσπη!"
   },
   {
     "days": [4],
     "time": "16:00",
     "category": "🌆 ΑΠΟΓΕΥΜΑ - Dorsoduro",
     "name": "Squero di San Trovaso",
-    "distance": "30' περπάτημα / 20' Vaporetto",
+    "distance": "30' περπάτημα",
     "tip": "Ναυπηγείο Γονδολών.",
     "cost": "Δωρεάν (Θέα)",
     "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DDal%2BMoro%27s%2BFresh%2BPasta",
-    "description": "Κοντά στην Accademia."
-  },
-  {
-    "days": [4],
-    "time": "16:30",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Dorsoduro",
-    "name": "Ponte dei Pugni",
-    "distance": "28' περπάτημα",
-    "tip": "Η Γέφυρα των Γροθιών.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DAll%2BArco%2BVenice",
-    "description": "Κοντά στο Campo San Barnaba (Dorsoduro)."
-  },
-  {
-    "days": [3],
-    "time": "09:00 - 14:00",
-    "category": "🌅 ΠΡΩΙ - Νησιά",
-    "name": "Murano & Burano",
-    "distance": "50' (Περπάτημα + Vaporetto)",
-    "tip": "Ολοήμερη.",
-    "cost": "Vaporetto Pass",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano+Venice",
-    "description": "Περπάτα 15' μέχρι τις Fondamente Nove (βόρεια πλευρά Cannaregio) και πάρε το πλοίο (Γραμμή 12)."
-  },
-  {
-    "days": [4],
-    "time": "17:00",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Αξιοθέατα",
-    "name": "Scala Contarini del Bovolo",
-    "distance": "15' περπάτημα",
-    "tip": "Σπιράλ σκάλα.",
-    "cost": "Είσοδος ~8€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DSaint%2BMark%27s%2BBasilica",
-    "description": "Κρυμμένη στα στενά κοντά στο Ριάλτο."
-  },
-  {
-    "days": [4],
-    "time": "17:30",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Αξιοθέατα",
-    "name": "Libreria Acqua Alta",
-    "distance": "16' περπάτημα",
-    "tip": "Βιβλιοπωλείο.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Libreria+Acqua+Alta",
-    "description": "Στο Castello, σχετικά κοντά."
-  },
-  {
-    "days": [2, 5],
-    "time": "11:30",
-    "category": "🌆 Hidden Gem",
-    "name": "Ponte delle Tette",
-    "distance": "11' περπάτημα",
-    "tip": "Γέφυρα των Στηθών.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBar%2BRialto%2Bda%2BLollo",
-    "description": "Πέρνα το Ριάλτο και προχώρα προς San Polo."
-  },
-  {
-    "days": [1],
-    "time": "17:00",
-    "category": "🌆 ΑΠΟΓΕΥΜΑ - Αξιοθέατα",
-    "name": "Teatro La Fenice",
-    "distance": "18' περπάτημα",
-    "tip": "Όπερα.",
-    "cost": "Εξωτερικά Δωρεάν",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DHarrys%2BBar%2BVenice",
-    "description": "Κοντά στον Άγιο Μάρκο."
-  },
-  {
-    "days": [4],
-    "time": "13:30",
-    "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
-    "name": "Dal Moro's Fresh Pasta",
-    "distance": "17' περπάτημα",
-    "tip": "Pasta στο κουτί.",
-    "cost": "8-11€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Fresh+Pasta+To+Go",
-    "description": "Στο Castello, κοντά στο Acqua Alta."
-  },
-  {
-    "days": [2, 5],
-    "time": "12:00",
-    "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
-    "name": "Cantina Do Mori",
-    "distance": "11' περπάτημα",
-    "tip": "Bacaro.",
-    "cost": "~3.50€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori+Venice",
-    "description": "Περιοχή San Polo (κοντά στο Ριάλτο)."
-  },
-  {
-    "days": [5],
-    "time": "13:00",
-    "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
-    "name": "All' Arco",
-    "distance": "11' περπάτημα",
-    "tip": "Cicchetti.",
-    "cost": "~3.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'+Arco+Venice",
-    "description": "San Polo."
-  },
-  {
-    "days": [5],
-    "time": "13:30",
-    "category": "🥪 ΜΕΣΗΜΕΡΙ - Street Food",
-    "name": "Pasticceria Tonolo",
-    "distance": "25' περπάτημα",
-    "tip": "Γλυκά.",
-    "cost": "~2.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pasticceria+Tonolo",
-    "description": "Στο Dorsoduro (λίγο μακριά με τα πόδια, κοντά στο Frari)."
-  },
-  {
-    "days": [3],
-    "time": "13:00",
-    "category": "🍽️ ΜΕΣΗΜΕΡΙ - Burano",
-    "name": "Trattoria Al Gatto Nero",
-    "distance": "Στο Burano",
-    "tip": "Risotto.",
-    "cost": "~60€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero",
-    "description": "Στο νησί Burano."
-  },
-  {
-    "days": [1],
-    "time": "21:00",
-    "category": "🍽️ ΒΡΑΔΥ - Luxury",
-    "name": "Terrazza Danieli",
-    "distance": "20' περπάτημα",
-    "tip": "Θέα.",
-    "cost": "High End",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DRialto%2BMarket",
-    "description": "Στην προκυμαία Riva degli Schiavoni."
+    "description": "📖 Ιστορία:\nΈνα από τα ελάχιστα 'Squeri' που έχουν απομείνει. Εδώ φτιάχνονται και επισκευάζονται οι γόνδολες. Το κτίριο μοιάζει με σπίτι των Άλπεων (ξύλινο) γιατί οι τεχνίτες (squeroi) κατάγονταν από τα βουνά του Cadore, από όπου έρχονταν και τα ξύλα."
   }
 ]

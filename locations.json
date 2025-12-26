@@ -1,184 +1,24 @@
 [
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco & Κέντρο",
-    "name": "Piazza San Marco",
-    "tip": "Πήγαινε στις 07:00 π.μ. για φωτογραφίες. Μετά τις 09:30 γεμίζει ασφυκτικά.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco & Κέντρο",
-    "name": "Basilica di San Marco",
-    "tip": "Κλείσε εισιτήριο online (Skip-the-line). Μην χάσεις την Pala d'Oro.",
-    "cost": "Είσοδος ~3€ (Online), Μουσείο ~15€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Marco+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco & Κέντρο",
-    "name": "Palazzo Ducale (Παλάτι Δόγηδων)",
-    "tip": "Αφιέρωσε 2-3 ώρες. Το εισιτήριο ισχύει και για το Μουσείο Correr.",
-    "cost": "Εισιτήριο ~30€ (25€ αν κλείσεις 30 μέρες πριν)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco & Κέντρο",
-    "name": "Ponte dei Sospiri (Γέφυρα Στεναγμών)",
-    "tip": "Δες την από την γέφυρα Paglia (δωρεάν) ή πέρνα από κάτω με γόνδολα.",
-    "cost": "Δωρεάν (εξωτερικά)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Rialto & Θέα",
-    "name": "Ponte di Rialto",
-    "tip": "Η πιο διάσημη γέφυρα. Αποφύγετε τα εστιατόρια ακριβώς δίπλα.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Bridge+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Rialto & Θέα",
-    "name": "T Fondaco dei Tedeschi",
-    "tip": "Πολυκατάστημα με ταράτσα για δωρεάν πανοραμική θέα. ΑΠΑΙΤΕΙΤΑΙ κράτηση online.",
-    "cost": "Δωρεάν (με κράτηση)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Cannaregio",
-    "name": "Ghetto Ebraico (Εβραϊκό Γκέτο)",
-    "tip": "Ιστορική, ήσυχη περιοχή. Ιδανική για βόλτα μακριά από τα πλήθη.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Venice+Ghetto"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Cannaregio",
-    "name": "Ca' d'Oro",
-    "tip": "Το 'Χρυσό Σπίτι'. Εντυπωσιακό παλάτι γοτθικού ρυθμού στο Grand Canal.",
-    "cost": "Είσοδος ~13€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ca'+d'Oro+Venice"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Νησιά",
-    "name": "Murano (Γυαλί)",
-    "tip": "Επισκέψου εργαστήριο για επίδειξη υαλουργίας.",
-    "cost": "Μουσείο Γυαλιού ~10€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Murano+Glass+Museum"
-  },
-  {
-    "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Νησιά",
-    "name": "Burano (Χρώματα)",
-    "tip": "Περπάτημα στα κανάλια με τα πολύχρωμα σπίτια. Το πιο γραφικό μέρος.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano+Venice"
-  },
-  {
-    "category": "🍕 ΦΑΓΗΤΟ (Street Food) - Rialto",
-    "name": "Bar Rialto da Lollo",
-    "tip": "Η κορυφαία επιλογή για Tramezzini (γεμιστά τριγωνικά σάντουιτς).",
-    "cost": "~2.50€ / tramezzino",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo+Venice"
-  },
-  {
-    "category": "🍕 ΦΑΓΗΤΟ (Street Food) - Rialto",
-    "name": "Dal Moro's Fresh Pasta to Go",
-    "tip": "Φρέσκα ζυμαρικά σε κουτί για το δρόμο. Value for Money.",
-    "cost": "8.00€ - 11.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Fresh+Pasta+To+Go"
-  },
-  {
-    "category": "🍷 ΠΟΤΟ & MEZE (Bacari) - Rialto",
-    "name": "Cantina Do Mori",
-    "tip": "Το αρχαιότερο Bacaro (1462). Στέκι του Καζανόβα. Μόνο όρθιοι.",
-    "cost": "Cicchetti ~2.50€ - 3.50€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori+Venice"
-  },
-  {
-    "category": "🍷 ΠΟΤΟ & MEZE (Bacari) - Rialto",
-    "name": "All' Arco",
-    "tip": "Αυθεντικό στέκι για ντόπιους. Δοκίμασε Sarde in Saor (σαρδέλες).",
-    "cost": "Οικονομικό (2-4€)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'+Arco+Venice"
-  },
-  {
-    "category": "🍷 CANNAREGIO - Ποτό & Φαγητό",
-    "name": "Al Timon",
-    "tip": "Το απόλυτο hit. Πάρε το ποτό και κάτσε στη βάρκα στο κανάλι. Δυνατή φάση το βράδυ.",
-    "cost": "Spritz ~4€, Cicchetti ~2.50€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Al+Timon+Venice"
-  },
-  {
-    "category": "🍷 CANNAREGIO - Ποτό & Φαγητό",
-    "name": "Paradiso Perduto",
-    "tip": "Θρυλική ταβέρνα με ζωντανή μουσική και θαλασσινά. Θέλει κράτηση.",
-    "cost": "Γεύμα ~35-45€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Paradiso+Perduto+Venice"
-  },
-  {
-    "category": "🍷 CANNAREGIO - Ποτό & Φαγητό",
-    "name": "Vino Vero",
-    "tip": "Chic Bacaro με εξαιρετική λίστα κρασιών και γκουρμέ μεζέδες.",
-    "cost": "Ποτήρι κρασί ~5€-7€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DPiazza%2BSan%2BMarco%2BVenice"
-  },
-  {
-    "category": "🍷 CANNAREGIO - Ποτό & Φαγητό",
-    "name": "Osteria ai Promessi Sposi",
-    "tip": "Κρυμμένο διαμάντι. Δοκίμασε τα κεφτεδάκια (polpette) στο μπαρ.",
-    "cost": "Polpette ~2€, Γεύμα ~35€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DPonte%2Bdi%2BRialto"
-  },
-  {
-    "category": "☕ ΚΑΦΕΣ & ΓΛΥΚΟ",
-    "name": "Torrefazione Cannaregio",
-    "tip": "Ο καλύτερος καφές (καβουρδίζεται εκεί). Πιες τον όρθιος (al banco).",
-    "cost": "Espresso ~1.20€",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DLibreria%2BAcqua%2BAlta"
-  },
-  {
-    "category": "☕ ΚΑΦΕΣ & ΓΛΥΚΟ",
-    "name": "Caffè Florian (San Marco)",
-    "tip": "Εμπειρία πολυτέλειας. Ακριβό αλλά ιστορικό.",
-    "cost": "Espresso 12-15€ (+6€ μουσική)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffè+Florian+Venice"
-  },
-  {
-    "category": "☕ ΚΑΦΕΣ & ΓΛΥΚΟ",
-    "name": "Pasticceria Tonolo",
-    "tip": "Το καλύτερο ζαχαροπλαστείο. Δοκίμασε Tiramisu ή Fritelle.",
-    "cost": "~1.50€ - 2.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pasticceria+Tonolo"
-  },
-  {
-    "category": "🍽️ ΕΣΤΙΑΤΟΡΙΑ (Sit-down)",
-    "name": "Trattoria Al Gatto Nero (Burano)",
-    "tip": "Must: Risotto di Gò. Απαραίτητη η κράτηση.",
-    "cost": "~50-70€ / άτομο",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero"
-  },
-  {
-    "category": "🍽️ ΕΣΤΙΑΤΟΡΙΑ (Sit-down)",
-    "name": "Trattoria da Rioba (Cannaregio)",
-    "tip": "Ρομαντικό δείπνο δίπλα στο κανάλι με υψηλή ποιότητα.",
-    "cost": "~45-55€ / άτομο",
-    "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBridge%2Bof%2BSighs"
-  },
-  {
-    "category": "🍸 COCKTAILS",
-    "name": "Harry's Bar",
-    "tip": "Για το αυθεντικό Bellini. Dress code: Smart casual.",
-    "cost": "Bellini 22-25€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venice"
-  },
-  {
-    "category": "🚤 ΜΕΤΑΚΙΝΗΣΗ",
-    "name": "Vaporetto (ACTV)",
-    "tip": "Πάρε την κάρτα 48 ωρών (35€). Το μονό εισιτήριο είναι 9.50€!",
-    "cost": "24h: 25€ | 48h: 35€ | 72h: 45€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Venezia+Piazzale+Roma"
-  },
-  {
-    "category": "🚤 ΜΕΤΑΚΙΝΗΣΗ",
-    "name": "Traghetto",
-    "tip": "Πέρασμα καναλιού με γόνδολα (π.χ. Santa Sofia).",
-    "cost": "2.00€ (Μετρητά)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia"
-  }
+  { "days": [1, 2, 3, 4, 5, 6], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco", "name": "Piazza San Marco", "tip": "Η βάση σου. Πέρνα μια βόλτα κάθε πρωί ή βράδυ.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice" },
+  { "days": [1, 4], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco", "name": "Basilica di San Marco", "tip": "Κλείσε εισιτήριο online.", "cost": "Είσοδος ~3€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Marco+Venice" },
+  { "days": [4], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco", "name": "Palazzo Ducale", "tip": "Αφιέρωσε το πρωινό της Πέμπτης εδώ.", "cost": "Εισιτήριο ~30€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice" },
+  { "days": [1], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - San Marco", "name": "Ponte dei Sospiri", "tip": "Δες την βράδυ της Δευτέρας φωτισμένη.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs+Venice" },
+  { "days": [2], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Rialto", "name": "Ponte di Rialto", "tip": "Βόλτα την Τρίτη μετά την αγορά.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Bridge+Venice" },
+  { "days": [2], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Rialto", "name": "Mercato di Rialto (Αγορά)", "tip": "Πήγαινε Τρίτη πρωί (Δευτέρα είναι κλειστά τα ψάρια).", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Market" },
+  { "days": [2], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Rialto", "name": "T Fondaco dei Tedeschi", "tip": "Κλείσε για Τρίτη απόγευμα.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi+Venice" },
+  { "days": [5], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Cannaregio", "name": "Ghetto Ebraico", "tip": "Βόλτα την Παρασκευή το πρωί.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Venice+Ghetto" },
+  { "days": [6], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Cannaregio", "name": "Ca' d'Oro", "tip": "Τελευταία βόλτα Σάββατο πριν φύγεις.", "cost": "Είσοδος ~13€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ca'+d'Oro+Venice" },
+  { "days": [3], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Νησιά", "name": "Murano & Burano", "tip": "Ολοήμερη εκδρομή την Τετάρτη.", "cost": "Vaporetto Pass", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano+Venice" },
+  { "days": [3], "category": "🏛️ ΑΞΙΟΘΕΑΤΑ - Νησιά", "name": "Torcello", "tip": "Σύντομη στάση μετά το Burano.", "cost": "Δωρεάν", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torcello+Basilica" },
+  { "days": [2], "category": "🍕 ΦΑΓΗΤΟ - Rialto", "name": "Bar Rialto da Lollo", "tip": "Tramezzini Τρίτη μεσημέρι.", "cost": "~2.50€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo+Venice" },
+  { "days": [4], "category": "🍕 ΦΑΓΗΤΟ - Castello", "name": "Dal Moro's Fresh Pasta", "tip": "Πέμπτη μεσημέρι μετά το Παλάτι.", "cost": "8-11€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Fresh+Pasta+To+Go" },
+  { "days": [1, 2], "category": "🍷 ΠΟΤΟ - Rialto", "name": "Cantina Do Mori", "tip": "Για κρασί στα όρθια.", "cost": "~3.50€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori+Venice" },
+  { "days": [1, 2], "category": "🍷 ΠΟΤΟ - Rialto", "name": "All' Arco", "tip": "Cicchetti.", "cost": "~3.00€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'+Arco+Venice" },
+  { "days": [1, 5], "category": "🍷 CANNAREGIO - Ποτό", "name": "Al Timon", "tip": "Δευτέρα βράδυ για χαλαρό ποτό.", "cost": "Spritz ~4€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Al+Timon+Venice" },
+  { "days": [5], "category": "🍷 CANNAREGIO - Φαγητό", "name": "Paradiso Perduto", "tip": "Παρασκευή βράδυ για το μεγάλο φινάλε!", "cost": "~40€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Paradiso+Perduto+Venice" },
+  { "days": [1], "category": "🍷 CANNAREGIO - Φαγητό", "name": "Osteria ai Promessi Sposi", "tip": "Δευτέρα βράδυ για ήσυχο δείπνο.", "cost": "~35€", "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DPonte%2Bdi%2BRialto" },
+  { "days": [6], "category": "☕ ΚΑΦΕΣ", "name": "Torrefazione Cannaregio", "tip": "Σάββατο πρωί ο τελευταίος καφές.", "cost": "1.20€", "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DLibreria%2BAcqua%2BAlta" },
+  { "days": [3], "category": "🍽️ ΕΣΤΙΑΤΟΡΙΑ - Burano", "name": "Trattoria Al Gatto Nero", "tip": "Τετάρτη μεσημέρι (Κάνε κράτηση!).", "cost": "~60€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero" },
+  { "days": [4], "category": "🍽️ ΕΣΤΙΑΤΟΡΙΑ - Cannaregio", "name": "Trattoria da Rioba", "tip": "Πέμπτη βράδυ ρομαντικό δείπνο.", "cost": "~50€", "mapUrl": "https://www.google.com/search?q=https://www.google.com/maps/search/%3Fapi%3D1%26query%3DBridge%2Bof%2BSighs" },
+  { "days": [5], "category": "🚤 ΜΕΤΑΚΙΝΗΣΗ", "name": "Traghetto Santa Sofia", "tip": "Περνάς απέναντι Παρασκευή μεσημέρι.", "cost": "2.00€", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia" }
 ]

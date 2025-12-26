@@ -7,30 +7,90 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
         h1 { text-align: center; color: #b71c1c; }
-        .intro { text-align: center; margin-bottom: 30px; font-style: italic; }
+        .intro { text-align: center; margin-bottom: 20px; font-style: italic; }
+        
+        /* Tabs Styling */
+        .tabs { display: flex; justify-content: center; margin-bottom: 20px; }
+        .tab-btn { background: #ddd; border: none; padding: 10px 20px; cursor: pointer; font-size: 1.1em; font-weight: bold; margin: 0 5px; border-radius: 5px 5px 0 0; }
+        .tab-btn.active { background: #b71c1c; color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* List Cards */
         .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 20px; border-left: 5px solid #b71c1c; }
         .category { font-size: 0.85em; text-transform: uppercase; color: #666; letter-spacing: 1px; }
         .name { font-size: 1.4em; font-weight: bold; margin: 5px 0; color: #2c3e50; }
         .tip { background-color: #fff3e0; padding: 10px; border-radius: 5px; margin: 10px 0; font-style: italic; }
         .cost-badge { display: inline-block; background-color: #e0f2f1; color: #00695c; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 0.9em; }
-        .btn { display: block; width: 100%; text-align: center; background-color: #b71c1c; color: white; text-decoration: none; padding: 10px 0; border-radius: 5px; margin-top: 15px; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background-color: #d32f2f; }
+        
+        /* Schedule Styling */
+        .day-header { background-color: #2c3e50; color: white; padding: 10px; border-radius: 5px; margin-top: 30px; font-size: 1.2em; font-weight: bold; }
+        .timeline-item { background: white; border-bottom: 1px solid #eee; padding: 15px; display: flex; align-items: center; }
+        .time { font-weight: bold; color: #b71c1c; min-width: 60px; }
+        .activity { flex-grow: 1; }
+        
+        .btn { display: inline-block; text-decoration: none; background-color: #b71c1c; color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; margin-left: 10px; }
+        .btn-full { display: block; width: 100%; text-align: center; margin-top: 15px; padding: 10px 0; font-size: 1em; }
     </style>
 </head>
 <body>
 
-    <h1>🇮🇹 Βενετία: Ο Οδηγός</h1>
-    <p class="intro">Βασισμένο στις προτάσεις του Τάσου Δούση ("Εικόνες")<br>Επικαιροποίηση Τιμών: 2025</p>
+    <h1>🇮🇹 Βενετία 2026</h1>
+    <p class="intro">12 Ιανουαρίου - 17 Ιανουαρίου<br>Tips by Tasos Dousis</p>
 
-    <div id="content">Φόρτωση δεδομένων...</div>
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('schedule')">📅 Πρόγραμμα</button>
+        <button class="tab-btn" onclick="openTab('list')">📍 Λίστα Αξιοθέατων</button>
+    </div>
+
+    <div id="schedule" class="tab-content active">
+        <div id="schedule-container">Φόρτωση προγράμματος...</div>
+    </div>
+
+    <div id="list" class="tab-content">
+        <div id="list-container">Φόρτωση λίστας...</div>
+    </div>
 
     <script>
+        // Tab Logic
+        function openTab(tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tab-content");
+            for (i = 0; i < x.length; i++) { x[i].className = "tab-content"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+            document.getElementById(tabName).className += " active";
+            event.currentTarget.className += " active";
+        }
+
+        // Fetch Schedule
+        fetch('schedule.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('schedule-container');
+                container.innerHTML = '';
+                data.forEach(day => {
+                    let html = `<div class="day-header">${day.date} <br> <small>${day.title}</small></div>`;
+                    day.events.forEach(event => {
+                        html += `
+                            <div class="timeline-item">
+                                <div class="time">${event.time}</div>
+                                <div class="activity">
+                                    ${event.activity}
+                                    ${event.mapUrl ? `<a href="${event.mapUrl}" target="_blank" class="btn">🗺️ Χάρτης</a>` : ''}
+                                </div>
+                            </div>`;
+                    });
+                    container.innerHTML += html;
+                });
+            });
+
+        // Fetch Locations List
         fetch('locations.json')
             .then(response => response.json())
             .then(data => {
-                const container = document.getElementById('content');
+                const container = document.getElementById('list-container');
                 container.innerHTML = '';
-                
                 data.forEach(item => {
                     const card = document.createElement('div');
                     card.className = 'card';
@@ -39,14 +99,10 @@
                         <div class="name">${item.name}</div>
                         <div class="cost-badge">💰 ${item.cost}</div>
                         <div class="tip">💡 Tip: ${item.tip}</div>
-                        <a href="${item.mapUrl}" target="_blank" class="btn">📍 Άνοιγμα στο Google Maps</a>
+                        <a href="${item.mapUrl}" target="_blank" class="btn btn-full">📍 Άνοιγμα στο Google Maps</a>
                     `;
                     container.appendChild(card);
                 });
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = 'Σφάλμα φόρτωσης δεδομένων.';
-                console.error('Error:', error);
             });
     </script>
 

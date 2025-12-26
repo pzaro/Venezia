@@ -1,169 +1,92 @@
 [
   {
-    "category": "🏰 Αξιοθέατα - San Marco",
+    "category": "Αξιοθέατα - San Marco",
     "name": "Piazza San Marco",
-    "tip": "Πήγαινε στις 06:00-07:00 π.μ. για φωτογραφίες χωρίς κόσμο.",
+    "tip": "Πήγαινε στις 07:00 π.μ. για φωτογραφίες χωρίς κόσμο.",
     "cost": "Δωρεάν",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice"
   },
   {
-    "category": "🏰 Αξιοθέατα - San Marco",
+    "category": "Αξιοθέατα - San Marco",
     "name": "Basilica di San Marco",
-    "tip": "Ο ναός με τα χρυσά ψηφιδωτά. Κλείσε εισιτήριο online.",
+    "tip": "Κλείσε εισιτήριο online για να γλιτώσεις την ουρά.",
     "cost": "Είσοδος ~3€ (Online), Μουσείο ~15-20€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Marco"
   },
   {
-    "category": "🏰 Αξιοθέατα - San Marco",
-    "name": "Campanile (Καμπαναριό)",
-    "tip": "Ανέβα με το ασανσέρ για την καλύτερη πανοραμική θέα.",
-    "cost": "~12€ - 15€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Campanile+di+San+Marco"
-  },
-  {
-    "category": "🏰 Αξιοθέατα - San Marco",
-    "name": "Palazzo Ducale (Παλάτι Δόγηδων)",
+    "category": "Αξιοθέατα - San Marco",
+    "name": "Palazzo Ducale",
     "tip": "Αφιέρωσε 2-3 ώρες. Το εισιτήριο ισχύει και για το Μουσείο Correr.",
-    "cost": "~30€ (ή 25€ με προκράτηση 30 ημερών)",
+    "cost": "~30€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice"
   },
   {
-    "category": "🏰 Αξιοθέατα - San Marco",
-    "name": "Ponte dei Sospiri (Γέφυρα Στεναγμών)",
-    "tip": "Δες την απ' έξω (από τη γέφυρα Paglia) ή πέρνα από μέσα επισκεπτόμενος το Παλάτι.",
-    "cost": "Δωρεάν (εξωτερικά)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bridge+of+Sighs"
-  },
-  {
-    "category": "🌉 Αξιοθέατα - Rialto & Κέντρο",
-    "name": "Ponte di Rialto",
-    "tip": "Η πιο διάσημη γέφυρα. Ιδανική για φωτογραφίες, αλλά προσοχή στα πορτοφολάδες.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Bridge"
-  },
-  {
-    "category": "🌉 Αξιοθέατα - Rialto & Κέντρο",
-    "name": "Mercato di Rialto (Αγορά)",
-    "tip": "Πήγαινε πρωί για να δεις την αυθεντική ψαραγορά.",
-    "cost": "Δωρεάν",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Market"
-  },
-  {
-    "category": "☕ Καφές & Ποτό (High End)",
-    "name": "Caffè Florian",
-    "tip": "Το παλαιότερο καφέ (1720). Εμπειρία πολυτέλειας.",
-    "cost": "Espresso 12-15€ (+6€ μουσική/άτομο)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffè+Florian"
-  },
-  {
-    "category": "☕ Καφές & Ποτό (High End)",
-    "name": "Gran Caffè Quadri",
-    "tip": "Το αντίπαλον δέος του Florian στην πλατεία. Ιστορικό και πανάκριβο.",
-    "cost": "Espresso ~12€+",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gran+Caffè+Quadri"
-  },
-  {
-    "category": "☕ Καφές & Ποτό (High End)",
-    "name": "Harry's Bar",
-    "tip": "Ιστορικό στέκι του Χέμινγουεϊ. Εδώ πίνεις το αυθεντικό Bellini.",
-    "cost": "Bellini 22€ - 25€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venice"
-  },
-  {
-    "category": "🥪 Φαγητό & Street Food",
+    "category": "Φαγητό & Ποτό",
     "name": "Bar Rialto da Lollo",
-    "tip": "Η κορυφαία επιλογή για Tramezzini (γεμιστά τριγωνικά σάντουιτς) στην αγορά.",
+    "tip": "Η κορυφαία επιλογή για Tramezzini (γεμιστά τριγωνικά σάντουιτς).",
     "cost": "~2.50€ / tramezzino",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo+Venice"
   },
   {
-    "category": "🥪 Φαγητό & Street Food",
+    "category": "Φαγητό & Ποτό",
     "name": "Cantina Do Mori",
-    "tip": "Το αρχαιότερο Bacaro (1462). Σκοτεινό και ατμοσφαιρικό.",
+    "tip": "Το αρχαιότερο Bacaro (1462). Στέκι του Καζανόβα.",
     "cost": "Cicchetti ~2.50€ - 3.50€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori+Venice"
   },
   {
-    "category": "🥪 Φαγητό & Street Food",
-    "name": "All' Arco",
-    "tip": "Αυθεντικό Bacaro. Δοκίμασε οπωσδήποτε 'Sarde in Saor' (σαρδέλες).",
-    "cost": "Cicchetti ~2.00€ - 3.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'Arco+Venice"
-  },
-  {
-    "category": "🥪 Φαγητό & Street Food",
+    "category": "Φαγητό & Ποτό",
     "name": "Dal Moro's Fresh Pasta to Go",
-    "tip": "Φρέσκα ζυμαρικά σε κουτί για το δρόμο. Η καλύτερη VFM επιλογή.",
+    "tip": "Φρέσκα ζυμαρικά σε κουτί για το δρόμο.",
     "cost": "8.00€ - 11.00€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Fresh+Pasta"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Venice"
   },
   {
-    "category": "🧁 Γλυκό",
-    "name": "Pasticceria Tonolo",
-    "tip": "Κορυφαίο ζαχαροπλαστείο. Δοκίμασε Fritelle (εποχιακά) ή Τιραμισού.",
-    "cost": "~1.50€ (στο χέρι)",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pasticceria+Tonolo"
+    "category": "Φαγητό & Ποτό",
+    "name": "Caffè Florian",
+    "tip": "Το παλαιότερο καφέ. Εμπειρία πολυτέλειας.",
+    "cost": "Espresso 12-15€ (+6€ μουσική)",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffe+Florian+Venice"
   },
   {
-    "category": "💎 Hidden Gems & Θέα",
+    "category": "Φαγητό & Ποτό",
+    "name": "Harry's Bar",
+    "tip": "Εδώ γεννήθηκε το Bellini και το Carpaccio.",
+    "cost": "Bellini 22-25€",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harrys+Bar+Venice"
+  },
+  {
+    "category": "Φαγητό & Ποτό",
+    "name": "Trattoria Al Gatto Nero (Burano)",
+    "tip": "Δοκίμασε οπωσδήποτε Risotto di Gò. Απαιτεί κράτηση.",
+    "cost": "~50-70€ / άτομο",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero+Burano"
+  },
+  {
+    "category": "Hidden Gems & Θέα",
     "name": "T Fondaco dei Tedeschi",
-    "tip": "Πολυκατάστημα με δωρεάν ταράτσα για θέα (απαιτεί κράτηση online).",
+    "tip": "Πολυκατάστημα με δωρεάν ταράτσα για θέα (θέλει κράτηση online).",
     "cost": "Δωρεάν",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi"
   },
   {
-    "category": "💎 Hidden Gems & Θέα",
-    "name": "Scala Contarini del Bovolo",
-    "tip": "Η εντυπωσιακή κρυμμένη σπιράλ σκάλα.",
-    "cost": "Είσοδος ~9€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Scala+Contarini+del+Bovolo"
-  },
-  {
-    "category": "💎 Hidden Gems & Θέα",
+    "category": "Hidden Gems & Θέα",
     "name": "Libreria Acqua Alta",
-    "tip": "Το 'πιο όμορφο βιβλιοπωλείο' με τη γόνδολα και τη σκάλα από βιβλία.",
+    "tip": "Το βιβλιοπωλείο με τη γόνδολα.",
     "cost": "Δωρεάν (αγορά αναμνηστικού)",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Libreria+Acqua+Alta"
   },
   {
-    "category": "🚤 Νησιά - Murano",
-    "name": "Murano (Γυαλί)",
-    "tip": "Επίσκεψη σε εργαστήριο υαλουργίας & Μουσείο Γυαλιού.",
-    "cost": "Μουσείο ~10€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Murano+Glass+Museum"
-  },
-  {
-    "category": "🚤 Νησιά - Burano",
-    "name": "Burano (Χρώματα)",
-    "tip": "Βόλτα στα χρωματιστά σπίτια & Μουσείο Δαντέλας.",
-    "cost": "Μουσείο Δαντέλας ~5€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano"
-  },
-  {
-    "category": "🚤 Νησιά - Burano",
-    "name": "Trattoria Al Gatto Nero",
-    "tip": "Δοκίμασε οπωσδήποτε 'Risotto di Gò'. Απαιτεί κράτηση μήνες πριν.",
-    "cost": "~50-70€ / άτομο",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero"
-  },
-  {
-    "category": "🚤 Νησιά - Torcello",
-    "name": "Torcello",
-    "tip": "Δες τη Βασιλική με τα ψηφιδωτά και τον πέτρινο 'Θρόνο του Αττίλα'.",
-    "cost": "Βασιλική ~5€",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torcello+Basilica"
-  },
-  {
-    "category": "🎫 Μετακίνηση",
+    "category": "Μετακίνηση",
     "name": "Vaporetto (ACTV)",
-    "tip": "Συμφέρει η κάρτα 48 ωρών (35€). Απέφυγε το μονό εισιτήριο.",
-    "cost": "24h: 25€ | 48h: 35€ | 72h: 45€",
+    "tip": "Συμφέρει η κάρτα 48 ωρών. Απέφυγε το μονό εισιτήριο.",
+    "cost": "48h Κάρτα: 35.00€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazzale+Roma+Venice"
   },
   {
-    "category": "🎫 Μετακίνηση",
+    "category": "Μετακίνηση",
     "name": "Traghetto",
-    "tip": "Πέρασμα του Grand Canal με μεγάλη γόνδολα (όρθιοι).",
+    "tip": "Οικονομικό πέρασμα του καναλιού με γόνδολα.",
     "cost": "2.00€",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia"
   }

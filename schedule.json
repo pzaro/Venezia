@@ -1,0 +1,66 @@
+[
+  {
+    "date": "Δευτέρα 12/01/2026",
+    "title": "🛬 Άφιξη & Πρώτη Εξερεύνηση",
+    "events": [
+      { "time": "11:05", "activity": "Άφιξη στο Αεροδρόμιο Marco Polo." },
+      { "time": "12:30", "activity": "Check-in στο ξενοδοχείο." },
+      { "time": "13:30", "activity": "Βόλτα προς Rialto. Στάση στο 'Dal Moro’s' για μακαρονάδα στο χέρι.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Moro's+Fresh+Pasta" },
+      { "time": "15:00", "activity": "Επίσκεψη στο 'Libreria Acqua Alta' (Βιβλιοπωλείο).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Libreria+Acqua+Alta" },
+      { "time": "17:00", "activity": "Χαλαρή βόλτα στην Piazza San Marco (νύχτα) για πρώτη εικόνα.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice" }
+    ]
+  },
+  {
+    "date": "Τρίτη 13/01/2026",
+    "title": "👑 San Marco & Ιστορία (Dousis Tips)",
+    "events": [
+      { "time": "07:00", "activity": "Φωτογράφιση στην Piazza San Marco (ΧΩΡΙΣ κόσμο - Must).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice" },
+      { "time": "08:30", "activity": "Καφές στο 'Caffè Florian' (Εμπειρία).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caffè+Florian" },
+      { "time": "10:00", "activity": "Επίσκεψη στο Palazzo Ducale (Παλάτι των Δόγηδων) & Γέφυρα Στεναγμών.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Doge's+Palace+Venice" },
+      { "time": "13:30", "activity": "Ελαφρύ γεύμα (Tramezzini) σε κοντινό σημείο." },
+      { "time": "15:00", "activity": "Βασιλική του Αγίου Μάρκου (Basilica).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Marco" },
+      { "time": "19:00", "activity": "Ποτό (Bellini) στο ιστορικό 'Harry's Bar'.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venice" }
+    ]
+  },
+  {
+    "date": "Τετάρτη 14/01/2026",
+    "title": "🚤 Τα Νησιά (Murano - Torcello - Burano)",
+    "events": [
+      { "time": "09:00", "activity": "Αναχώρηση με Vaporetto για Murano (Γυαλί).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Murano+Glass+Museum" },
+      { "time": "11:30", "activity": "Μετάβαση στο Torcello (Θρόνος Αττίλα & Βασιλική).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torcello+Basilica" },
+      { "time": "13:30", "activity": "Άφιξη στο Burano. Φαγητό στο 'Trattoria Al Gatto Nero' (Θέλει κράτηση!).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trattoria+Al+Gatto+Nero" },
+      { "time": "15:30", "activity": "Βόλτα στα χρωματιστά σπίτια του Burano.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Burano" },
+      { "time": "17:30", "activity": "Επιστροφή στη Βενετία με το ηλιοβασίλεμα στη λιμνοθάλασσα." }
+    ]
+  },
+  {
+    "date": "Πέμπτη 15/01/2026",
+    "title": "🍷 Rialto Market & Bacaro Tour",
+    "events": [
+      { "time": "09:00", "activity": "Mercato di Rialto (Ψαραγορά - Πήγαινε νωρίς).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rialto+Market" },
+      { "time": "11:00", "activity": "Στάση για Tramezzini στο 'Bar Rialto da Lollo'.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bar+Rialto+da+Lollo" },
+      { "time": "13:00", "activity": "Στάση για κρασί & Cicchetti στο 'All' Arco'.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=All'Arco+Venice" },
+      { "time": "16:00", "activity": "Θέα από την ταράτσα του 'T Fondaco dei Tedeschi' (Κράτηση online).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=T+Fondaco+dei+Tedeschi" },
+      { "time": "19:00", "activity": "Βραδινό πέρασμα με Traghetto (γόνδολα) το Grand Canal.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia" }
+    ]
+  },
+  {
+    "date": "Παρασκευή 16/01/2026",
+    "title": "💎 Hidden Gems & Τελευταίες Βόλτες",
+    "events": [
+      { "time": "09:30", "activity": "Πρωινό/Γλυκό στο 'Pasticceria Tonolo'.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pasticceria+Tonolo" },
+      { "time": "11:00", "activity": "Ανάβαση στη Scala Contarini del Bovolo.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Scala+Contarini+del+Bovolo" },
+      { "time": "13:30", "activity": "Επίσκεψη στο 'Cantina Do Mori' (Στέκι Καζανόβα).", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cantina+Do+Mori" },
+      { "time": "16:00", "activity": "Ελεύθερος χρόνος για ψώνια ή χαμένη βόλτα στο Cannaregio.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice" }
+    ]
+  },
+  {
+    "date": "Σάββατο 17/01/2026",
+    "title": "🛫 Αναχώρηση",
+    "events": [
+      { "time": "09:00", "activity": "Τελευταίος εσπρέσο 'Al Banco'. Check-out.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venice" },
+      { "time": "10:30", "activity": "Αναχώρηση για αεροδρόμιο (υπολόγισε 1-1.5 ώρα μετακίνηση)." },
+      { "time": "13:45", "activity": "Πτήση επιστροφής." }
+    ]
+  }
+]

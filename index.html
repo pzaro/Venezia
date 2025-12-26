@@ -3,44 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Οδηγός Βενετίας (by Dousis)</title>
+    <title>Βενετία: Dousis Guide</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { text-align: center; color: #b71c1c; }
-        .intro { text-align: center; margin-bottom: 20px; font-style: italic; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; max-width: 800px; margin: 0 auto; padding: 15px; }
+        h1 { text-align: center; color: #b71c1c; margin-bottom: 5px; }
+        .intro { text-align: center; margin-bottom: 20px; font-style: italic; color: #666; font-size: 0.9em; }
         
+        /* HOTEL BANNER - NEW */
+        .hotel-banner {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border: 2px solid #b71c1c;
+        }
+        .hotel-name { font-size: 1.3em; font-weight: bold; display: block; margin-bottom: 5px; }
+        .hotel-stop { font-size: 0.9em; color: #cfd8dc; margin-bottom: 10px; display: block; }
+        .btn-home { background-color: #fff; color: #2c3e50; padding: 8px 20px; text-decoration: none; border-radius: 20px; font-weight: bold; display: inline-block; transition: 0.3s; }
+        .btn-home:hover { background-color: #cfd8dc; }
+
         /* Tabs Styling */
         .tabs { display: flex; justify-content: center; margin-bottom: 20px; }
-        .tab-btn { background: #ddd; border: none; padding: 10px 20px; cursor: pointer; font-size: 1.1em; font-weight: bold; margin: 0 5px; border-radius: 5px 5px 0 0; }
-        .tab-btn.active { background: #b71c1c; color: white; }
+        .tab-btn { background: #e0e0e0; border: none; padding: 12px 20px; cursor: pointer; font-size: 1em; font-weight: bold; margin: 0 5px; border-radius: 8px; color: #555; flex: 1; max-width: 200px; }
+        .tab-btn.active { background: #b71c1c; color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
         .tab-content { display: none; }
-        .tab-content.active { display: block; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         /* List Cards */
         .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 20px; border-left: 5px solid #b71c1c; }
-        .category { font-size: 0.85em; text-transform: uppercase; color: #666; letter-spacing: 1px; }
-        .name { font-size: 1.4em; font-weight: bold; margin: 5px 0; color: #2c3e50; }
-        .tip { background-color: #fff3e0; padding: 10px; border-radius: 5px; margin: 10px 0; font-style: italic; }
-        .cost-badge { display: inline-block; background-color: #e0f2f1; color: #00695c; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 0.9em; }
+        .category { font-size: 0.75em; text-transform: uppercase; color: #666; letter-spacing: 1px; font-weight: bold; }
+        .name { font-size: 1.3em; font-weight: bold; margin: 5px 0; color: #2c3e50; }
+        .tip { background-color: #fff3e0; padding: 10px; border-radius: 5px; margin: 10px 0; font-style: italic; border-left: 3px solid #ff9800; }
+        .cost-badge { display: inline-block; background-color: #e0f2f1; color: #00695c; padding: 4px 10px; border-radius: 12px; font-weight: bold; font-size: 0.85em; margin-top: 5px; }
         
         /* Schedule Styling */
-        .day-header { background-color: #2c3e50; color: white; padding: 10px; border-radius: 5px; margin-top: 30px; font-size: 1.2em; font-weight: bold; }
-        .timeline-item { background: white; border-bottom: 1px solid #eee; padding: 15px; display: flex; align-items: center; }
-        .time { font-weight: bold; color: #b71c1c; min-width: 60px; }
-        .activity { flex-grow: 1; }
+        .day-header { background-color: #37474f; color: white; padding: 12px; border-radius: 8px; margin-top: 25px; font-size: 1.1em; font-weight: bold; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .timeline-item { background: white; border-bottom: 1px solid #eee; padding: 15px; display: flex; align-items: flex-start; }
+        .timeline-item:last-child { border-bottom: none; }
+        .time { font-weight: bold; color: #b71c1c; min-width: 55px; font-size: 0.9em; padding-top: 3px; }
+        .activity { flex-grow: 1; font-size: 0.95em; line-height: 1.5; }
         
-        .btn { display: inline-block; text-decoration: none; background-color: #b71c1c; color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; margin-left: 10px; }
-        .btn-full { display: block; width: 100%; text-align: center; margin-top: 15px; padding: 10px 0; font-size: 1em; }
+        .btn { display: inline-block; text-decoration: none; background-color: #b71c1c; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.75em; margin-top: 5px; }
+        .btn-full { display: block; width: 100%; text-align: center; margin-top: 15px; padding: 10px 0; font-size: 1em; background-color: #b71c1c; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
 
     <h1>🇮🇹 Βενετία 2026</h1>
-    <p class="intro">12 Ιανουαρίου - 17 Ιανουαρίου<br>Tips by Tasos Dousis</p>
+    <p class="intro">12 - 17 Ιανουαρίου | Tips by Tasos Dousis</p>
+
+    <div class="hotel-banner">
+        <span class="hotel-name">🏠 Pesaro Palace</span>
+        <span class="hotel-stop">🚏 Στάση Vaporetto: <strong>Ca' d'Oro</strong></span>
+        <a href="https://www.google.com/maps/search/?api=1&query=Pesaro+Palace+Venice" target="_blank" class="btn-home">📍 Πάμε Σπίτι</a>
+    </div>
 
     <div class="tabs">
         <button class="tab-btn active" onclick="openTab('schedule')">📅 Πρόγραμμα</button>
-        <button class="tab-btn" onclick="openTab('list')">📍 Λίστα Αξιοθέατων</button>
+        <button class="tab-btn" onclick="openTab('list')">📍 Λίστα</button>
     </div>
 
     <div id="schedule" class="tab-content active">
@@ -70,20 +94,21 @@
                 const container = document.getElementById('schedule-container');
                 container.innerHTML = '';
                 data.forEach(day => {
-                    let html = `<div class="day-header">${day.date} <br> <small>${day.title}</small></div>`;
+                    let html = `<div class="day-header">${day.date} <br> <small style="font-weight:normal; opacity:0.9">${day.title}</small></div>`;
                     day.events.forEach(event => {
                         html += `
                             <div class="timeline-item">
                                 <div class="time">${event.time}</div>
                                 <div class="activity">
                                     ${event.activity}
-                                    ${event.mapUrl ? `<a href="${event.mapUrl}" target="_blank" class="btn">🗺️ Χάρτης</a>` : ''}
+                                    ${event.mapUrl ? `<br><a href="${event.mapUrl}" target="_blank" class="btn">🗺️ Χάρτης</a>` : ''}
                                 </div>
                             </div>`;
                     });
                     container.innerHTML += html;
                 });
-            });
+            })
+            .catch(err => console.error("Schedule Error:", err));
 
         // Fetch Locations List
         fetch('locations.json')
@@ -98,12 +123,13 @@
                         <div class="category">${item.category}</div>
                         <div class="name">${item.name}</div>
                         <div class="cost-badge">💰 ${item.cost}</div>
-                        <div class="tip">💡 Tip: ${item.tip}</div>
-                        <a href="${item.mapUrl}" target="_blank" class="btn btn-full">📍 Άνοιγμα στο Google Maps</a>
+                        <div class="tip">💡 ${item.tip}</div>
+                        <a href="${item.mapUrl}" target="_blank" class="btn-full">📍 Άνοιγμα στο Google Maps</a>
                     `;
                     container.appendChild(card);
                 });
-            });
+            })
+            .catch(err => console.error("List Error:", err));
     </script>
 
 </body>

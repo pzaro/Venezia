@@ -3,231 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Βενετία - Dousis Guide</title>
+    <title>Βενετία 12-17 Ιαν</title>
     <style>
-        /* Βασικό Στυλ */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            background-color: #f0f2f5; 
-            color: #333; 
-            margin: 0; 
-            padding: 0; 
-        }
+        body { font-family: -apple-system, system-ui, sans-serif; background: #f4f4f9; margin: 0; padding-bottom: 40px; }
+        .header { background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px 0; }
+        h1 { text-align: center; color: #b71c1c; margin: 5px 0; font-size: 1.2rem; }
+        
+        /* Scrollable Filters */
+        .scroll-container { display: flex; overflow-x: auto; gap: 8px; padding: 5px 10px; scrollbar-width: none; }
+        .scroll-container::-webkit-scrollbar { display: none; }
+        
+        .btn-filter { flex: 0 0 auto; padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 0.9rem; cursor: pointer; }
+        .btn-filter.active { background: #b71c1c; color: white; border-color: #b71c1c; }
+        
+        .date-filter { border-color: #2c3e50; color: #2c3e50; font-weight: bold; }
+        .date-filter.active { background: #2c3e50; color: white; }
 
-        /* Header & Filters */
-        .header-container {
-            background-color: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding-bottom: 10px;
-        }
-
-        h1 { 
-            text-align: center; 
-            color: #b71c1c; 
-            margin: 0;
-            padding: 15px 0;
-            font-size: 1.5rem;
-        }
-
-        .filter-container {
-            display: flex;
-            overflow-x: auto; /* Για να σκρολάρει οριζόντια σε μικρά κινητά */
-            white-space: nowrap;
-            padding: 0 10px;
-            gap: 10px;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Απόκρυψη scrollbar για Firefox */
-        }
-        .filter-container::-webkit-scrollbar { display: none; } /* Απόκρυψη scrollbar για Chrome */
-
-        .filter-btn {
-            background-color: #eee;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: #555;
-            flex-shrink: 0;
-        }
-
-        .filter-btn.active {
-            background-color: #b71c1c;
-            color: white;
-            box-shadow: 0 4px 6px rgba(183, 28, 28, 0.3);
-        }
-
-        /* Λίστα Περιεχομένου */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .card { 
-            background: white; 
-            border-radius: 12px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-            margin-bottom: 20px; 
-            padding: 20px; 
-            border-left: 5px solid #b71c1c; 
-            animation: fadeIn 0.3s ease-in-out;
-        }
-
-        .category-tag { 
-            font-size: 0.75em; 
-            text-transform: uppercase; 
-            color: #888; 
-            letter-spacing: 1px; 
-            margin-bottom: 5px;
-        }
-
-        .name { 
-            font-size: 1.3em; 
-            font-weight: 800; 
-            margin: 5px 0; 
-            color: #2c3e50; 
-        }
-
-        .cost-badge { 
-            display: inline-block; 
-            background-color: #e0f2f1; 
-            color: #00695c; 
-            padding: 4px 10px; 
-            border-radius: 6px; 
-            font-weight: 700; 
-            font-size: 0.85em; 
-            margin-top: 5px;
-        }
-
-        .tip { 
-            background-color: #fff8e1; 
-            color: #f57f17;
-            padding: 10px; 
-            border-radius: 8px; 
-            margin: 15px 0; 
-            font-style: italic; 
-            font-size: 0.95em;
-            border-left: 3px solid #ffca28;
-        }
-
-        .btn { 
-            display: block; 
-            width: 100%; 
-            text-align: center; 
-            background-color: #fff; 
-            color: #b71c1c; 
-            border: 2px solid #b71c1c;
-            text-decoration: none; 
-            padding: 10px 0; 
-            border-radius: 8px; 
-            margin-top: 10px; 
-            font-weight: bold; 
-            transition: background 0.2s; 
-        }
-
-        .btn:hover { 
-            background-color: #b71c1c; 
-            color: white; 
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .budget-info {
-            text-align: center;
-            font-size: 0.8em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
+        .container { max-width: 600px; margin: 0 auto; padding: 10px; }
+        .card { background: white; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #b71c1c; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .category { font-size: 0.75rem; color: #777; text-transform: uppercase; }
+        .name { font-size: 1.2rem; font-weight: bold; margin: 5px 0; color: #333; }
+        .meta { display: flex; justify-content: space-between; font-size: 0.9rem; margin-top: 5px; color: #00695c; font-weight: 600; }
+        .tip { background: #fff8e1; color: #f57f17; padding: 8px; border-radius: 5px; font-size: 0.9rem; margin-top: 10px; font-style: italic; }
+        .map-btn { display: block; text-align: center; background: #b71c1c; color: white; text-decoration: none; padding: 10px; margin-top: 10px; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="header-container">
-        <h1>🇮🇹 Venice Guide</h1>
-        <div class="filter-container">
-            <button class="filter-btn active" onclick="filterSelection('all')">Όλα</button>
-            <button class="filter-btn" onclick="filterSelection('sights')">🏛️ Αξιοθέατα</button>
-            <button class="filter-btn" onclick="filterSelection('food')">🍕 Φαγητό</button>
-            <button class="filter-btn" onclick="filterSelection('drink')">🍷 Ποτό & Καφές</button>
-            <button class="filter-btn" onclick="filterSelection('transport')">🚤 Μετακίνηση</button>
-        </div>
+<div class="header">
+    <h1>🇮🇹 Πρόγραμμα Βενετίας</h1>
+    
+    <div class="scroll-container" style="margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+        <button class="btn-filter date-filter active" onclick="filterData('day', 0)">Όλα</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 1)">Δευ 12/1</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 2)">Τρι 13/1</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 3)">Τετ 14/1</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 4)">Πεμ 15/1</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 5)">Παρ 16/1</button>
+        <button class="btn-filter date-filter" onclick="filterData('day', 6)">Σαβ 17/1</button>
     </div>
 
-    <div class="container">
-        <div class="budget-info">Ημερήσιο Budget: ~115€ (με 20% έκτακτα)</div>
-        <div id="content">Φόρτωση δεδομένων...</div>
+    <div class="scroll-container">
+        <button class="btn-filter active" onclick="filterData('cat', 'all')">Όλες οι Κατηγορίες</button>
+        <button class="btn-filter" onclick="filterData('cat', 'sights')">🏛️ Αξιοθέατα</button>
+        <button class="btn-filter" onclick="filterData('cat', 'food')">🍕 Φαγητό</button>
+        <button class="btn-filter" onclick="filterData('cat', 'drink')">🍷 Ποτό</button>
     </div>
+</div>
 
-    <script>
-        let allData = []; // Εδώ θα αποθηκεύσουμε όλα τα δεδομένα
+<div class="container" id="content"></div>
 
-        // 1. Φόρτωση του JSON
-        fetch('locations.json')
-            .then(response => response.json())
-            .then(data => {
-                allData = data;
-                renderItems(allData); // Εμφάνιση όλων αρχικά
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = 'Σφάλμα φόρτωσης. Βεβαιώσου ότι το locations.json είναι στον ίδιο φάκελο.';
-                console.error('Error:', error);
-            });
+<script>
+    let allData = [];
+    let currentDay = 0; // 0 = Όλα
+    let currentCat = 'all';
 
-        // 2. Συνάρτηση Εμφάνισης (Render)
-        function renderItems(items) {
-            const container = document.getElementById('content');
-            container.innerHTML = '';
-            
-            items.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.innerHTML = `
-                    <div class="category-tag">${item.category}</div>
-                    <div class="name">${item.name}</div>
-                    <div class="cost-badge">💰 ${item.cost}</div>
-                    <div class="tip">💡 ${item.tip}</div>
-                    <a href="${item.mapUrl}" target="_blank" class="btn">📍 Άνοιγμα Χάρτη</a>
-                `;
-                container.appendChild(card);
-            });
-        }
+    fetch('locations.json')
+        .then(res => res.json())
+        .then(data => { allData = data; render(); });
 
-        // 3. Συνάρτηση Φίλτρου
-        function filterSelection(category) {
-            // Αλλαγή χρώματος κουμπιού
-            const buttons = document.getElementsByClassName('filter-btn');
-            for (let btn of buttons) {
-                btn.classList.remove('active');
-            }
+    function filterData(type, value) {
+        if (type === 'day') {
+            currentDay = value;
+            // Update UI buttons for Day
+            document.querySelectorAll('.date-filter').forEach(b => b.classList.remove('active'));
             event.target.classList.add('active');
-
-            // Λογική Φιλτραρίσματος
-            if (category === 'all') {
-                renderItems(allData);
-            } else {
-                const filtered = allData.filter(item => {
-                    // Μετατρέπουμε σε μικρά γράμματα για σιγουριά
-                    const cat = item.category.toLowerCase();
-                    
-                    if (category === 'sights') return cat.includes('αξιοθεατα') || cat.includes('νησιά') || cat.includes('hidden');
-                    if (category === 'food') return cat.includes('φαγητο') || cat.includes('εστιατορια');
-                    if (category === 'drink') return cat.includes('ποτο') || cat.includes('καφες') || cat.includes('cocktails');
-                    if (category === 'transport') return cat.includes('μετακινηση');
-                });
-                renderItems(filtered);
-            }
+        } else {
+            currentCat = value;
+            // Update UI buttons for Category
+            document.querySelectorAll('.btn-filter:not(.date-filter)').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
         }
-    </script>
+        render();
+    }
+
+    function render() {
+        const container = document.getElementById('content');
+        container.innerHTML = '';
+
+        const filtered = allData.filter(item => {
+            // Φίλτρο Ημέρας (Αν είναι 0 τα δείχνει όλα, αλλιώς ψάχνει αν η μέρα υπάρχει στη λίστα days)
+            const dayMatch = currentDay === 0 || (item.days && item.days.includes(currentDay));
+            
+            // Φίλτρο Κατηγορίας
+            let catMatch = true;
+            const c = item.category.toLowerCase();
+            if (currentCat === 'sights') catMatch = c.includes('αξιοθεατα') || c.includes('νησιά');
+            if (currentCat === 'food') catMatch = c.includes('φαγητο') || c.includes('εστιατορια');
+            if (currentCat === 'drink') catMatch = c.includes('ποτο') || c.includes('καφες');
+
+            return dayMatch && catMatch;
+        });
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<div style="text-align:center; padding:20px;">Δεν υπάρχουν προτάσεις για αυτή την επιλογή.</div>';
+            return;
+        }
+
+        filtered.forEach(item => {
+            container.innerHTML += `
+                <div class="card">
+                    <div class="category">${item.category}</div>
+                    <div class="name">${item.name}</div>
+                    <div class="meta">
+                        <span>💰 ${item.cost}</span>
+                    </div>
+                    <div class="tip">💡 ${item.tip}</div>
+                    <a href="${item.mapUrl}" target="_blank" class="map-btn">📍 Χάρτης</a>
+                </div>
+            `;
+        });
+    }
+</script>
 
 </body>
 </html>

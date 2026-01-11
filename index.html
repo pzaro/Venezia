@@ -133,7 +133,18 @@
                 return;
             }
 
+            // Λίστα με λέξεις-κλειδιά για τα Δωρεάν Αξιοθέατα (Museum Pass)
+            const freePassKeywords = ["Ducale", "Δόγηδων", "Correr", "Γυαλιού", "Glass", "Δαντέλας", "Lace", "Pesaro", "Rezzonico"];
+
             currentDisplayData.forEach((item, index) => {
+                // Έλεγχος αν το όνομα περιέχει κάποια λέξη-κλειδί για δωρεάν είσοδο
+                const isFree = freePassKeywords.some(keyword => item.name.includes(keyword));
+                
+                // Δημιουργία της πράσινης ετικέτας
+                const freeBadgeHtml = isFree 
+                    ? `<div style="background: #2e7d32; color: white; font-size: 0.8rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">✅ ΔΩΡΕΑΝ (Museum Pass)</div>` 
+                    : '';
+
                 // Εμφάνιση Απόστασης (αν υπάρχει)
                 const distanceHtml = item.distance ? `<span class="distance-tag">👣 Από Pesaro: <b>${item.distance}</b></span>` : '';
 
@@ -141,7 +152,7 @@
                     <div class="card">
                         <div class="category-tag">${item.category}</div>
                         <div class="name">${item.name}</div>
-                        ${distanceHtml}
+                        ${freeBadgeHtml} ${distanceHtml}
                         <div class="meta-info">
                             <span class="time-badge">🕒 ${item.time || '-'}</span>
                             <span class="cost-badge">💰 ${item.cost}</span>
@@ -373,6 +384,7 @@
     </body>
 </html>
 </html>
+
 
 
 

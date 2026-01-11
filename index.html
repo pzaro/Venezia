@@ -193,21 +193,51 @@
             document.getElementById('stopBtn').style.display = isSpeaking ? 'inline-block' : 'none';
         }
     </script>
-<div style="margin-top: 30px; padding: 20px; background-color: #f0f8ff; border-top: 2px solid #007bff; font-family: sans-serif;">
-    <h2 style="color: #0056b3;">🚆 Μεταφορές & Ωράρια</h2>
+<div style="margin-top: 30px; padding: 20px; background-color: #f0f8ff; border-top: 2px solid #007bff; font-family: sans-serif; padding-bottom: 50px;">
     
-    <div id="transport-data">
-        </div>
+    <h2 style="color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-top: 0;">🛒 Τι να αγοράσω (Checklist)</h2>
+    <div id="shopping-list"></div>
+
+    <h2 style="color: #0056b3; margin-top: 40px; border-bottom: 2px solid #0056b3; padding-bottom: 10px;">🚆 Μεταφορές & Ωράρια</h2>
+    <div id="transport-data"></div>
 
     <script>
-        // ΟΛΟΚΛΗΡΩΜΕΝΑ ΔΕΔΟΜΕΝΑ ΜΕΤΑΦΟΡΩΝ (ΩΡΑΡΙΑ + ΣΤΑΣΕΙΣ)
+        // --- ΔΕΔΟΜΕΝΑ 1: ΛΙΣΤΑ ΑΓΟΡΩΝ ---
+        const ticketList = [
+            {
+                name: "ACTV - 7 Days Tourist Ticket",
+                price: "65,00€ / άτομο",
+                desc: "Για απεριόριστα Βαπορέτα (Βενετία, Μουράνο, Μπουράνο, Λίντο).",
+                sos: "Προσοχή: ΔΕΝ ισχύει για το λεωφορείο αεροδρομίου. Ζητήστε Τιμολόγιο!"
+            },
+            {
+                name: "Museum Pass (MUVE)",
+                price: "~42,00€ / άτομο",
+                desc: "Περιλαμβάνει: Παλάτι Δόγηδων, Μουσείο Correr, Μουσείο Γυαλιού (Murano), Μουσείο Δαντέλας (Burano).",
+                sos: "Ζητήστε το 'Museum Pass', όχι το 'San Marco Pass'."
+            },
+            {
+                name: "ATVO Bus Express (Treviso)",
+                price: "12,00€ (One Way) ή 22€ (Return)",
+                desc: "Λεωφορείο από/προς Αεροδρόμιο Treviso.",
+                sos: "Αγορά από τα μηχανήματα ATVO. Ζητήστε Τιμολόγιο στο γκισέ."
+            },
+            {
+                name: "Basilica San Marco (Skip-the-Line)",
+                price: "3€ - 6€ (Online)",
+                desc: "Μόνο είσοδος για την εκκλησία χωρίς ουρά.",
+                sos: "Κλείστε το online (basilicasanmarco.skiperformance.com)."
+            }
+        ];
+
+        // --- ΔΕΔΟΜΕΝΑ 2: ΩΡΑΡΙΑ & ΣΤΑΣΕΙΣ (Full) ---
         const transportSchedule = {
             atvo_treviso: {
                 title: "✈️ BUS: Treviso Airport (ATVO)",
                 desc: "Express Line 351: Treviso ↔ Venice (P.le Roma)",
                 sos: "Το λεωφορείο περιμένει την πτήση αν αργήσει.",
                 isTable: true, 
-                headers: ["Από Αεροδρόμιο (Προς Βενετία)", "Από Βενετία (Προς Αεροδρόμιο)"],
+                headers: ["Από Αεροδρόμιο", "Από Βενετία"],
                 col1: ["08:00", "08:30", "09:00", "09:40", "10:20", "11:00", "11:40", "12:20", "13:00", "13:40", "14:20", "15:00", "15:40", "16:20", "17:00", "17:40", "18:20", "19:00", "19:40", "20:20", "21:00", "21:50", "22:30", "23:15 (Last)"],
                 col2: ["05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30"]
             },
@@ -264,10 +294,28 @@
             }
         };
 
-        // Render Function
-        const container = document.getElementById('transport-data');
-        container.innerHTML = ''; 
+        // --- RENDER LOGIC: SHOPPING LIST ---
+        const shopContainer = document.getElementById('shopping-list');
+        ticketList.forEach(ticket => {
+            const div = document.createElement('div');
+            div.style.backgroundColor = "white";
+            div.style.padding = "15px";
+            div.style.marginBottom = "10px";
+            div.style.borderRadius = "8px";
+            div.style.borderLeft = "5px solid #2e7d32"; // Πράσινη γραμμή
+            div.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
 
+            div.innerHTML = `
+                <h3 style="margin: 0 0 5px 0; color: #333; font-size: 1.1em;">${ticket.name}</h3>
+                <div style="font-weight: bold; color: #2e7d32; margin-bottom: 5px;">${ticket.price}</div>
+                <div style="color: #555; font-size: 0.9em;">${ticket.desc}</div>
+                ${ticket.sos ? `<div style="margin-top: 8px; color: #d32f2f; font-weight: bold; font-size: 0.85em;">⚠️ ${ticket.sos}</div>` : ''}
+            `;
+            shopContainer.appendChild(div);
+        });
+
+        // --- RENDER LOGIC: TRANSPORT ---
+        const transContainer = document.getElementById('transport-data');
         for (const key in transportSchedule) {
             const item = transportSchedule[key];
             const div = document.createElement('div');
@@ -275,10 +323,10 @@
             div.style.padding = "15px";
             div.style.backgroundColor = "white";
             div.style.borderRadius = "8px";
-            div.style.borderLeft = "5px solid #0056b3";
+            div.style.borderLeft = "5px solid #0056b3"; // Μπλε γραμμή
             div.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
             
-            let htmlContent = `<h3 style="margin: 0 0 5px 0; color: #333;">${item.title}</h3>`;
+            let htmlContent = `<h3 style="margin: 0 0 5px 0; color: #333; font-size: 1.1em;">${item.title}</h3>`;
             htmlContent += `<p style="margin: 5px 0; color: #555;">${item.desc}</p>`;
             
             if (item.hours) htmlContent += `<p style="margin: 5px 0; color: darkgreen;">🕒 ${item.hours}</p>`;
@@ -293,13 +341,13 @@
                 <div style="display: flex; gap: 10px; margin-top: 10px; font-size: 0.85em;">
                     <div style="flex: 1;">
                         <div style="font-weight: bold; background: #eee; padding: 5px; border-radius: 4px;">${item.headers[0]}</div>
-                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 120px; overflow-y: auto;">
+                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 150px; overflow-y: auto;">
                             ${item.col1.join('<br>')}
                         </div>
                     </div>
                     <div style="flex: 1;">
                         <div style="font-weight: bold; background: #eee; padding: 5px; border-radius: 4px;">${item.headers[1]}</div>
-                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 120px; overflow-y: auto;">
+                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 150px; overflow-y: auto;">
                             ${item.col2.join('<br>')}
                         </div>
                     </div>
@@ -311,29 +359,21 @@
                 htmlContent += `
                 <div style="margin-top: 10px;">
                     <div style="font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">🚏 Στάσεις (με τη σειρά):</div>
-                    <div style="background: #f1f8e9; padding: 8px; border-radius: 6px; border: 1px solid #c5e1a5; height: 100px; overflow-y: auto; font-size: 0.85em; line-height: 1.6;">
+                    <div style="background: #f1f8e9; padding: 8px; border-radius: 6px; border: 1px solid #c5e1a5; height: 120px; overflow-y: auto; font-size: 0.85em; line-height: 1.6;">
                         ${item.stops.map((stop, i) => `${i + 1}. ${stop}`).join('<br>')}
                     </div>
                 </div>`;
             }
 
             div.innerHTML = htmlContent;
-            container.appendChild(div);
+            transContainer.appendChild(div);
         }
     </script>
-<script>
-        // ... τα script για το modal και το speech ...
-    </script>
-
-    <div style="margin-top: 30px; padding: 20px; background-color: #f0f8ff; border-top: 2px solid #007bff; font-family: sans-serif;">
-        
-        <script>
-            // ... τα δεδομένα ...
-        </script>
-    </div>
+</div>
     </body>
 </html>
 </html>
+
 
 
 

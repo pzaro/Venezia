@@ -200,62 +200,52 @@
         </div>
 
     <script>
-        // ΕΜΠΛΟΥΤΙΣΜΕΝΑ ΔΕΔΟΜΕΝΑ ΜΕΤΑΦΟΡΩΝ
+        // ΔΕΔΟΜΕΝΑ ΜΕΤΑΦΟΡΩΝ ΜΕ ΑΝΑΛΥΤΙΚΟΥΣ ΠΙΝΑΚΕΣ
         const transportSchedule = {
             atvo_treviso: {
                 title: "✈️ BUS: Treviso Airport (ATVO)",
-                desc: "Treviso Airport ↔ Venice (Piazzale Roma)",
-                time: "Διάρκεια: 70 λεπτά (Μέσω Mestre)",
-                hours: "Από Αεροδρόμιο: 07:45 - 22:30 (Συγχρονισμένο με πτήσεις)\nΑπό Βενετία: 04:20 - 18:30 (Τσεκάρετε πίνακα επιστροφής)",
-                sos: "Προσοχή! Αν η πτήση αργήσει, το λεωφορείο περιμένει.",
-                note: "Στάσεις: Airport -> Mestre (Stazione) -> Venice (P.le Roma). Τιμή 12€ (22€ a/r)."
+                desc: "Express Line 351: Treviso ↔ Venice (P.le Roma)",
+                sos: "Το λεωφορείο περιμένει την πτήση αν αργήσει.",
+                isTable: true, // Ειδική ένδειξη για να φτιάξουμε πίνακα
+                headers: ["Από Αεροδρόμιο (Προς Βενετία)", "Από Βενετία (Προς Αεροδρόμιο)"],
+                col1: ["08:00", "08:30", "09:00", "09:40", "10:20", "11:00", "11:40", "12:20", "13:00", "13:40", "14:20", "15:00", "15:40", "16:20", "17:00", "17:40", "18:20", "19:00", "19:40", "20:20", "21:00", "21:50", "22:30", "23:15 (Last)"],
+                col2: ["05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30"]
             },
             vaporetto_1: {
                 title: "🚤 Vaporetto LINEA 1 (Βασική)",
                 desc: "P.le Roma ↔ Rialto ↔ San Marco ↔ Lido",
-                stops: "Στάσεις: Όλες (μαζί με Ca' d'Oro)",
                 hours: "05:00 - 23:30 (Κάθε 12' τη μέρα, κάθε 20' το βράδυ)",
-                note: "Ιδανική για το ξενοδοχείο σας. Πιο αργή, αλλά βλέπεις τα πάντα."
+                note: "Ιδανική για το Pesaro Palace. Στάση: Ca' d'Oro."
             },
             vaporetto_2: {
                 title: "🚤 Vaporetto LINEA 2 (Express)",
-                desc: "San Zaccaria ↔ Giudecca ↔ Tronchetto ↔ P.le Roma ↔ Rialto",
-                stops: "Στάσεις: Μόνο κεντρικές (OXI Ca' d'Oro)",
+                desc: "San Zaccaria ↔ Giudecca ↔ P.le Roma ↔ Rialto",
                 hours: "05:00 - 23:00 (Κάθε 12')",
-                note: "Πάρτε τη για γρήγορη μετακίνηση ή για τον γύρο της πόλης."
+                note: "Γρήγορος γύρος της πόλης. Δεν σταματάει στο ξενοδοχείο."
             },
             vaporetto_12: {
                 title: "🏝️ Vaporetto LINEA 12 (Νησιά)",
-                desc: "F.te Nove ↔ Murano ↔ Burano ↔ Torcello",
+                desc: "F.te Nove ↔ Murano ↔ Burano",
                 hours: "04:20 - 22:25 (Κάθε 20'-30')",
-                stops: "Αφετηρία: Fondamente Nove (Βόρεια πλευρά)",
-                sos: "Τελευταία επιστροφή από Burano ~22:00. Μην το χάσετε!",
-                note: "Ταξίδι: ~45 λεπτά μέχρι το Burano."
-            },
-            vaporetto_4: {
-                title: "🔄 Vaporetto LINEA 4.1 / 4.2",
-                desc: "Γύρος Βενετίας & Murano (Κυκλική)",
-                hours: "06:00 - 20:30 (Κάθε 20')",
-                note: "Η 4.1 πάει αριστερόστροφα, η 4.2 δεξιόστροφα. Συνδέουν το Murano με P.le Roma."
+                sos: "Τελευταία επιστροφή από Burano ~22:00. Μην το χάσετε!"
             },
             vaporetto_N: {
                 title: "🌙 Vaporetto LINEA N (Νυχτερινό)",
                 desc: "Όλη η διαδρομή της Γραμμής 1 & 2",
                 hours: "23:30 - 05:00 (Κάθε 20-30 λεπτά)",
-                note: "Σταματάει στο Ca' d'Oro. Είναι η μόνη λύση για μετά τα μεσάνυχτα."
+                note: "Σταματάει στο Ca' d'Oro. Η μόνη λύση για μετά τα μεσάνυχτα."
             },
             train_verona: {
                 title: "🚅 Τρένο για Βερόνα",
                 desc: "Venezia S. Lucia ↔ Verona P. Nuova",
-                hours: "Πρώτο: 05:40 | Τελευταίο Επιστροφής: 22:12",
-                regional: "Regionale Veloce: 10€ (1h 28m) - Σταθερή τιμή",
-                fast: "Frecciarossa: 20€-30€ (1h 12m) - Κυμαινόμενη τιμή"
+                regional: "Regionale Veloce: 10€ (1h 28m)",
+                fast: "Frecciarossa: 20€-30€ (1h 12m)",
+                sos: "Τελευταίο τρένο επιστροφής ~22:12."
             }
         };
 
-        // Render Function (Δεν αλλάζει)
         const container = document.getElementById('transport-data');
-        container.innerHTML = ''; // Καθαρισμός για σιγουριά
+        container.innerHTML = ''; 
 
         for (const key in transportSchedule) {
             const item = transportSchedule[key];
@@ -264,20 +254,40 @@
             div.style.padding = "15px";
             div.style.backgroundColor = "white";
             div.style.borderRadius = "8px";
-            div.style.borderLeft = "5px solid #0056b3"; // Μπλε γραμμή αριστερά για στυλ
+            div.style.borderLeft = "5px solid #0056b3";
             div.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
             
-            // Δυναμική δημιουργία HTML με ελέγχους αν υπάρχει το πεδίο
             let htmlContent = `<h3 style="margin: 0 0 5px 0; color: #333;">${item.title}</h3>`;
-            htmlContent += `<p style="margin: 5px 0; color: #555;">${item.desc}</p>`;
             
-            if (item.time) htmlContent += `<p style="margin: 5px 0; font-weight: bold;">⏱️ ${item.time}</p>`;
-            if (item.hours) htmlContent += `<p style="margin: 5px 0; color: darkgreen; white-space: pre-line;">🕒 ${item.hours}</p>`;
-            if (item.stops) htmlContent += `<p style="margin: 5px 0; font-size: 0.9em;">📍 ${item.stops}</p>`;
-            if (item.regional) htmlContent += `<p style="margin: 5px 0;">🎫 ${item.regional}</p>`;
-            if (item.fast) htmlContent += `<p style="margin: 5px 0;">🚄 ${item.fast}</p>`;
-            if (item.sos) htmlContent += `<p style="margin: 8px 0; color: #d32f2f; font-weight: bold; background: #ffebee; padding: 5px; border-radius: 4px;">⚠️ ${item.sos}</p>`;
-            if (item.note) htmlContent += `<p style="margin: 8px 0 0 0; font-style: italic; font-size: 0.9em; color: #666;">ℹ️ ${item.note}</p>`;
+            if (item.isTable) {
+                // Ειδική εμφάνιση πίνακα για το ATVO
+                htmlContent += `<p style="margin: 5px 0; font-weight: bold;">${item.desc}</p>`;
+                if (item.sos) htmlContent += `<p style="color: #d32f2f; font-weight: bold; font-size: 0.9em;">⚠️ ${item.sos}</p>`;
+                
+                htmlContent += `
+                <div style="display: flex; gap: 10px; margin-top: 10px; font-size: 0.85em;">
+                    <div style="flex: 1;">
+                        <div style="font-weight: bold; background: #eee; padding: 5px; border-radius: 4px;">${item.headers[0]}</div>
+                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 150px; overflow-y: auto;">
+                            ${item.col1.join('<br>')}
+                        </div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-weight: bold; background: #eee; padding: 5px; border-radius: 4px;">${item.headers[1]}</div>
+                        <div style="background: #fafafa; padding: 5px; border: 1px solid #eee; height: 150px; overflow-y: auto;">
+                            ${item.col2.join('<br>')}
+                        </div>
+                    </div>
+                </div>`;
+            } else {
+                // Κλασική εμφάνιση για τα υπόλοιπα
+                htmlContent += `<p style="margin: 5px 0; color: #555;">${item.desc}</p>`;
+                if (item.hours) htmlContent += `<p style="margin: 5px 0; color: darkgreen;">🕒 ${item.hours}</p>`;
+                if (item.regional) htmlContent += `<p style="margin: 5px 0;">🎫 ${item.regional}</p>`;
+                if (item.fast) htmlContent += `<p style="margin: 5px 0;">🚄 ${item.fast}</p>`;
+                if (item.sos) htmlContent += `<p style="margin: 8px 0; color: #d32f2f; font-weight: bold; background: #ffebee; padding: 5px; border-radius: 4px;">⚠️ ${item.sos}</p>`;
+                if (item.note) htmlContent += `<p style="margin: 8px 0 0 0; font-style: italic; font-size: 0.9em; color: #666;">ℹ️ ${item.note}</p>`;
+            }
 
             div.innerHTML = htmlContent;
             container.appendChild(div);
@@ -286,5 +296,6 @@
 </div>
 </body>
 </html>
+
 
 
